@@ -76,12 +76,12 @@
       .ppt-slide:nth-of-type(3) .flow-plus { font-size: 27px; color: #2563eb; }
       .ppt-slide:nth-of-type(3) .flow-arrow { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: #dbeafe; color: #1d4ed8; font-size: 21px; font-weight: 900; }
       .ppt-slide:nth-of-type(3) > div:nth-child(4) { min-height: 170px; flex-shrink: 0; }
-      .ppt-slide:nth-of-type(8) .roadmap-list { border: 0; padding: 0; gap: 5px; }
-      .ppt-slide:nth-of-type(8) .roadmap-step { display: flex; align-items: center; gap: 12px; padding: 8px 10px; margin: 2px 0; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; min-height: 49px; }
-      .ppt-slide:nth-of-type(8) .roadmap-number { display: flex; flex: 0 0 32px; width: 32px; height: 32px; align-items: center; justify-content: center; border-radius: 50%; background: #e2e8f0; color: #334155; font-size: 14px; font-weight: 900; }
-      .ppt-slide:nth-of-type(9) .jamsil-case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-      .ppt-slide:nth-of-type(9) .jamsil-case { padding: 12px 14px; border-radius: 12px; border: 1px solid #475569; background: #1e293b; color: #e2e8f0; }
-      .ppt-slide:nth-of-type(9) .jamsil-case strong { display: block; color: #fff; font-size: 16px; }
+      .slide-roadmap .roadmap-list { border: 0; padding: 0; gap: 5px; }
+      .slide-roadmap .roadmap-step { display: flex; align-items: center; gap: 12px; padding: 8px 10px; margin: 2px 0; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; min-height: 49px; }
+      .slide-roadmap .roadmap-number { display: flex; flex: 0 0 32px; width: 32px; height: 32px; align-items: center; justify-content: center; border-radius: 50%; background: #e2e8f0; color: #334155; font-size: 14px; font-weight: 900; }
+      .slide-case .jamsil-case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      .slide-case .jamsil-case { padding: 12px 14px; border-radius: 12px; border: 1px solid #475569; background: #1e293b; color: #e2e8f0; }
+      .slide-case .jamsil-case strong { display: block; color: #fff; font-size: 16px; }
       table, .prevent-break {
         page-break-inside: avoid;
         break-inside: avoid;
@@ -103,6 +103,104 @@
     .premium-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    :root { --ink:#0f172a; --body:#334155; --blue:#2563eb; --blue-soft:#dbeafe; --green:#047857; --amber:#b45309; --danger:#be123c; --line:#dbe3ef; }
+    .sep-participation { display:flex; align-items:center; gap:14px; margin:14px 0; padding:12px 16px; border:1px solid #bfdbfe; border-left:5px solid var(--blue); border-radius:14px; background:#eff6ff; color:var(--body); }
+    .sep-kicker { flex:0 0 auto; padding:5px 10px; border-radius:9px; background:#1d4ed8; color:#fff; font-size:13px; font-weight:800; line-height:1.2; text-align:center; }
+    .sep-participation strong { color:var(--ink); font-size:18px; }
+    .sep-participation > span:last-child { font-size:13px; }
+    .sep-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .sep-card { position:relative; padding:18px 16px 14px 58px; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:16px; background:#fff; }
+    .sep-card.sep-issues { border-top-color:#059669; }
+    .sep-card.sep-next { border-top-color:#7c3aed; }
+    .sep-num { position:absolute; top:17px; left:16px; width:30px; height:30px; display:grid; place-items:center; border-radius:50%; background:#dbeafe; color:#1d4ed8; font-weight:900; font-size:14px; }
+    .sep-issues .sep-num { background:#d1fae5; color:#047857; }
+    .sep-next .sep-num { background:#ede9fe; color:#6d28d9; }
+    .sep-card h4 { margin:0 0 9px; color:var(--ink); font-size:18px; font-weight:800; }
+    .sep-list, .sep-plan { margin:0; padding:0; list-style:none; }
+    .sep-list li, .sep-plan li { padding:9px 0; border-top:1px solid var(--line); }
+    .sep-list li:first-child, .sep-plan li:first-child { border-top:0; }
+    .sep-list b, .sep-plan b { display:block; color:#4c1d95; font-size:15px; }
+    .sep-issues .sep-list b { color:#047857; }
+    .sep-next .sep-plan b { color:#6d28d9; }
+    .sep-list span, .sep-plan span { display:block; margin-top:3px; color:var(--body); font-size:14px; line-height:1.45; }
+    .sep-list em, .sep-plan em { display:block; margin-top:4px; color:var(--green); font-size:14px; font-style:normal; font-weight:700; line-height:1.45; }
+    .sep-tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 8px; }
+    .sep-tags span { padding:3px 7px; border:1px solid #a7f3d0; border-radius:999px; color:#047857; font-size:12px; font-weight:700; }
+    .sep-caution { margin-top:12px; padding:10px 14px; border:1px solid #fecdd3; border-radius:10px; background:#fff1f2; color:#be123c; font-size:14px; font-weight:700; }
+    .priority-list { margin:0; padding-left:18px; font-size:14px; line-height:1.65; }
+    .priority-logo { align-self:center; flex:0 0 auto; }
+    .priority-logo img { display:block; max-width:160px; height:auto; background:#fff; border-radius:10px; padding:8px 12px; }
+    .cost-hero { display:flex; align-items:center; gap:16px; color:#78350f; }
+    .cost-hero span, .cost-hero b { font-size:14px; font-weight:800; }
+    .cost-hero strong { font-size:26px; line-height:1.15; }
+    .cost-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:14px 0 0; padding:0; list-style:none; }
+    .cost-list li { display:grid; gap:3px; font-size:13px; color:var(--body); }
+    .cost-list b { color:#78350f; }
+    .law-source { margin:8px 0 0; color:#93c5fd; font-size:12px; }
+    .law-source a { color:inherit; text-decoration:underline; }
+    .jamsil-case-grid, .strategy-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .jamsil-case { padding:12px 14px; border:1px solid #475569; border-radius:12px; background:#1e293b; color:#e2e8f0; font-size:13px; line-height:1.45; }
+    .jamsil-case strong { display:block; color:#fff; font-size:15px; }
+    .jamsil-case a { color:#93c5fd; font-size:12px; }
+    .strategy-step { display:flex; gap:8px; color:#e2e8f0; font-size:13px; }
+    .strategy-step > span { flex:0 0 auto; color:#fbbf24; font-weight:900; }
+    .strategy-step p { margin:2px 0 0; }
+    .strategy-note { margin:10px 0 0; color:#cbd5e1; font-size:13px; }
+
+    @media screen and (max-width:640px) {
+      body { padding:12px 0 24px; }
+      .ppt-slide { min-height:auto; margin:0 0 16px; border-radius:0; border-left:0; border-right:0; box-shadow:none; }
+      .ppt-slide > div:first-child { min-height:auto; }
+      .ppt-slide h2 { font-size:32px; line-height:1.25; }
+      .ppt-slide h3 { font-size:24px; line-height:1.3; }
+      .ppt-slide h4 { font-size:18px; line-height:1.35; }
+      .ppt-slide p, .ppt-slide li, .ppt-slide td { font-size:15px; line-height:1.65; }
+      .ppt-slide small, .ppt-slide .text-\[10px\], .ppt-slide .text-\[11px\] { font-size:13px !important; line-height:1.5; }
+      .ppt-slide .text-xs { font-size:14px !important; line-height:1.55; }
+      .ppt-slide .text-sm { font-size:15px !important; line-height:1.65; }
+      .ppt-slide .p-8, .ppt-slide .p-6 { padding:20px !important; }
+      .ppt-slide .p-4, .ppt-slide .p-3 { padding:16px !important; }
+      .ppt-slide .gap-6 { gap:12px !important; }
+      .ppt-slide .my-6, .ppt-slide .my-5 { margin-top:16px !important; margin-bottom:16px !important; }
+      .ppt-slide .mb-5 { margin-bottom:16px !important; }
+      .ppt-slide .grid-cols-1.md\:grid-cols-2, .ppt-slide .grid-cols-1.md\:grid-cols-3 { grid-template-columns:minmax(0,1fr) !important; }
+      .ppt-slide .flex.items-center.justify-between { align-items:flex-start; }
+      .premium-card:hover { transform:none; box-shadow:none; }
+      header.no-print { position:static; margin:0 12px 12px; padding:16px; border-radius:16px; }
+      header.no-print > div:first-child { width:100%; }
+      header.no-print > div:last-child { display:grid; grid-template-columns:1fr 1fr; width:100%; gap:8px; }
+      header.no-print button { min-height:44px; justify-content:center; font-size:14px; }
+      header.no-print button:focus-visible { outline:3px solid #93c5fd; outline-offset:2px; }
+      .problem-flow { display:grid; grid-template-columns:1fr; gap:10px; }
+      .problem-flow .flow-plus { display:none; }
+      .problem-flow .flow-arrow { margin:-2px auto; }
+      .problem-summary { padding:18px !important; font-size:18px !important; line-height:1.5; text-align:left; }
+      .priority-copy { display:flex; flex-direction:column; gap:14px; }
+      .priority-logo { position:static; align-self:flex-end; }
+      .priority-logo img { max-width:170px; }
+      .sep-participation { align-items:flex-start; flex-wrap:wrap; }
+      .sep-participation strong { width:calc(100% - 86px); font-size:18px; }
+      .sep-participation > span:last-child { width:100%; font-size:14px; }
+      .sep-grid { grid-template-columns:1fr; gap:12px; }
+      .sep-card { padding:18px 16px 16px 58px; }
+      .sep-card h4 { font-size:19px; }
+      .sep-list b, .sep-plan b, .sep-list span, .sep-plan span, .sep-list em, .sep-plan em { font-size:15px; }
+      .cost-hero { display:grid; gap:6px; }
+      .cost-hero strong { font-size:30px; }
+      .cost-list { grid-template-columns:1fr; }
+      .roadmap-list { justify-content:flex-start !important; gap:12px; }
+      .roadmap-step { display:flex; align-items:flex-start; gap:10px; }
+      .roadmap-step .text-emerald-700, .roadmap-step .text-blue-900 { display:flex; flex-wrap:wrap; gap:5px; }
+      .jamsil-case-grid, .strategy-list { grid-template-columns:1fr; }
+      .ppt-slide .overflow-x-auto { overflow:visible; border:0; background:transparent; box-shadow:none; }
+      .ppt-slide table, .ppt-slide tbody, .ppt-slide tr, .ppt-slide th, .ppt-slide td { display:block; width:100%; }
+      .ppt-slide thead { display:none; }
+      .ppt-slide tbody { display:grid; gap:12px; }
+      .ppt-slide tr { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:#fff; }
+      .ppt-slide td { border:0 !important; padding:14px 16px !important; }
+      .ppt-slide td:first-child { background:#eff6ff; color:#1e3a8a; text-align:left; }
     }
   </style>
 </head>
@@ -126,7 +224,7 @@
       </button>
       <button onclick="copyCurrentLink()" class="px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-xl font-bold text-xs flex items-center gap-1.5 transition-all shadow-sm">
         <i class="fa-solid fa-share-nodes"></i>
-        <span>카카오톡 공유 링크 복복사</span>
+        <span>링크 복사</span>
       </button>
     </div>
   </header>
@@ -183,7 +281,7 @@
             <a href="https://tally.so/r/zxkN61" target="_blank" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-colors">증빙 제출처 이동 <i class="fa-solid fa-arrow-right ml-1"></i></a>
           </div>
           <p class="text-sm text-slate-600 leading-relaxed">
-            오픈채팅방은 프라이어팰리스 실소유주를 대상으로 인증제로 운영됩니다.<br>입장 후 공지에 따라 인증을 완료해 주시기 바랍니다.
+            오픈채팅방은 프라이어팰리스 실소유주를 대상으로 인증제로 운영됩니다.<br>입장 후 공지에 따라 인증을 완료해 주시기 바랍니다.<br><span class="text-xs text-slate-500">인증 자료는 이 HTML과 Git 저장소에 저장되지 않습니다.</span>
           </p>
         </div>
       </div>
@@ -194,7 +292,7 @@
         <div>
           <h4 class="text-base md:text-lg font-bold text-slate-900 mb-1">2. 건설적인 대안 제시 및 열린 토론 환영</h4>
           <p class="text-sm text-slate-600 leading-relaxed">
-            시설 개선 요구와 타 단지 벤치마킹 사례를 공유합니다.<br>우리 아파트 발전을 위한 의견과 아이디어를 환영합니다.
+            시설 개선 의견과 참고 사례를 근거와 함께 공유합니다.<br>우리 아파트 발전을 위한 의견과 아이디어를 환영합니다.
           </p>
         </div>
       </div>
@@ -273,21 +371,21 @@
       <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
         <h5 class="text-base font-extrabold text-slate-900 mb-2">프리미엄급 커뮤니티 확충</h5>
         <ul class="pillar-list"><li>GDR 스크린 골프연습장</li><li>프리미엄 피트니스 센터</li><li>스터디 라운지·주민 카페테리아</li></ul>
-        <div class="text-[11px] font-bold text-blue-700 pt-3 border-t border-slate-100">✓ 삶의 품격과 입주민 편의 극대화</div>
+        <div class="text-[11px] font-bold text-blue-700 pt-3 border-t border-slate-100">기대 효과(안) · 삶의 품격과 입주민 편의 극대화</div>
       </div>
 
       <!-- 2. 주차장 (문구 변경 적용) -->
       <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
         <h5 class="text-base font-extrabold text-slate-900 mb-2">지하주차장 및 공용부 현대화</h5>
         <ul class="pillar-list"><li>바닥 에폭시 전면 재시공</li><li>고조도 센서 LED 조명 교체</li><li>스마트 주차 유도·충전 구역</li></ul>
-        <div class="text-[11px] font-bold text-indigo-700 pt-3 border-t border-slate-100">✓ 밝고 안전한 단지 첫인상 완성</div>
+        <div class="text-[11px] font-bold text-indigo-700 pt-3 border-t border-slate-100">기대 효과(안) · 밝고 안전한 단지 첫인상 완성</div>
       </div>
 
       <!-- 3. 문주/특화 -->
       <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
         <h5 class="text-base font-extrabold text-slate-900 mb-2">랜드마크 문주 & 외관 특화</h5>
         <ul class="pillar-list"><li>랜드마크 문주 디자인 특화</li><li>커튼월 룩·프리미엄 외벽 도장</li><li>수경 조경·야간 경관조명</li></ul>
-        <div class="text-[11px] font-bold text-emerald-700 pt-3 border-t border-slate-100">✓ 외부 시선을 사로잡는 랜드마크화</div>
+        <div class="text-[11px] font-bold text-emerald-700 pt-3 border-t border-slate-100">기대 효과(안) · 외부 시선을 사로잡는 랜드마크화</div>
       </div>
     </div>
 
@@ -303,7 +401,7 @@
       <div>
         <div class="flex items-center gap-2 mb-1">
           <span class="text-xs font-bold text-blue-700 tracking-wider uppercase block">Chapter 03</span>
-          <span class="px-2 py-0.5 bg-rose-500 text-white text-[10px] font-black rounded-full shadow-sm animate-pulse">이달의 핵심 업데이트</span>
+          <span class="px-2 py-0.5 bg-rose-500 text-white text-[10px] font-black rounded-full shadow-sm">이달의 핵심 업데이트</span>
         </div>
         <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">26년 9월 주요 논의사항 종합</h3>
       </div>
@@ -322,9 +420,9 @@
         <div>
           <h4>정비 방식과 판단 기준</h4>
           <ul class="sep-list">
-            <li><b>대수선 중심 개선</b><span>공용부·설비를 중심으로 거주 중 공사가 가능한 범위를 논의</span><em>의견 · 이주 부담을 줄이는 개선안부터 검토하자는 의견 제시</em></li>
-            <li><b>리모델링 비교 검토</b><span>증축 가능성, 인허가 요건, 사업 기간과 세대 분담금을 비교</span><em>의견 · 증축형 리모델링은 비용·법규 확인 후 비교 검토</em></li>
-            <li><b>시설 상태 확인</b><span>장기수선계획과 공사 범위를 연결해 우선순위를 정리</span><em>다음 · 현장 진단·견적 후 공사 범위와 재원 판단</em></li>
+            <li><b>대수선 중심 개선</b><span>토론방 논의(확인 필요) · 공용부·설비를 중심으로 거주 중 공사가 가능한 범위를 검토</span><em>논의된 의견(확인 필요) · 이주 부담을 줄이는 개선안부터 살펴보자는 의견</em></li>
+            <li><b>리모델링 비교 검토</b><span>토론방 논의(확인 필요) · 증축 가능성, 인허가 요건, 사업 기간과 세대 분담금을 비교</span><em>다음 확인 · 비용·법규 확인 후 비교 검토</em></li>
+            <li><b>시설 상태 확인</b><span>장기수선계획과 공사 범위를 연결해 우선순위를 정리</span><em>다음 확인 · 현장 진단·견적 후 공사 범위와 재원 판단</em></li>
           </ul>
         </div>
       </section>
@@ -335,9 +433,9 @@
           <h4>개선 후보와 핵심 쟁점</h4>
           <div class="sep-tags"><span>엘리베이터</span><span>외벽·공용부</span><span>주차·진입부·조경</span><span>커뮤니티·문주·브랜드</span></div>
           <ul class="sep-list">
-            <li><b>노후·안전 항목</b><span>엘리베이터·외벽·공용부의 노후 상태와 시급한 공사를 논의</span><em>의견 · 안전·노후 항목을 먼저 점검하자는 의견 제시</em></li>
-            <li><b>비용·재원 구조</b><span>장기수선충당금, 최소 부담금, 중복투자 가능성을 함께 점검</span><em>의견 · 비용 기준과 재원 사용 절차를 별도 확인</em></li>
-            <li><b>단지 특화 방향</b><span>주차·진입부·조경, 커뮤니티·문주·브랜드 적용을 논의</span><em>다음 · 시공사 제안과 단지 여건을 비교해 우선순위 정리</em></li>
+            <li><b>노후·안전 항목</b><span>토론방 논의(확인 필요) · 엘리베이터·외벽·공용부의 노후 상태와 시급한 공사를 검토</span><em>논의된 의견(확인 필요) · 안전·노후 항목을 먼저 점검</em></li>
+            <li><b>비용·재원 구조</b><span>토론방 논의(확인 필요) · 장기수선충당금, 최소 부담금, 중복투자 가능성을 함께 점검</span><em>다음 확인 · 비용 기준과 재원 사용 절차를 별도 확인</em></li>
+            <li><b>단지 특화 방향</b><span>주차·진입부·조경, 커뮤니티·문주·브랜드 적용을 논의</span><em>다음 확인 · 시공사 제안과 단지 여건을 비교해 우선순위 정리</em></li>
           </ul>
         </div>
       </section>
@@ -347,9 +445,9 @@
         <div>
           <h4>향후 계획 및 논의할 사항</h4>
           <ol class="sep-plan">
-            <li><b>01. 주민 의견수렴</b><span>필요 시설, 우선순위, 비용 부담 의향을 구분해 조사</span><em>다음 · 설문·설명회에서 공사 비교안을 제시</em></li>
-            <li><b>02. 기초 검토</b><span>시설 상태, 법규·인허가, 장기수선계획과 재원을 점검</span><em>다음 · 진단·견적을 위한 확인 항목을 구체화</em></li>
-            <li><b>03. 대안 비교</b><span>공사 범위·기간·비용을 비교한 뒤 공식 절차를 검토</span><em>다음 · 비교안 공개 후 입대의 의결·동의 절차 검토</em></li>
+            <li><b>01. 주민 의견수렴</b><span>필요 시설, 우선순위, 비용 부담 의향을 구분해 조사</span><em>다음 확인 · 설문·설명회에서 공사 비교안을 제시</em></li>
+            <li><b>02. 기초 검토</b><span>시설 상태, 법규·인허가, 장기수선계획과 재원을 점검</span><em>다음 확인 · 진단·견적을 위한 확인 항목을 구체화</em></li>
+            <li><b>03. 대안 비교</b><span>공사 범위·기간·비용을 비교한 뒤 공식 절차를 검토</span><em>다음 확인 · 비교안 공개 후 입대의 의결·동의 절차 검토</em></li>
           </ol>
         </div>
       </section>
@@ -395,20 +493,20 @@
           </tr>
           <tr class="border-b border-slate-100 hover:bg-slate-50">
             <td class="py-4 px-4 font-bold text-left pl-5 bg-slate-50 border-r border-slate-200 text-slate-800">주민 이주</td>
-            <td class="py-4 px-3 text-rose-600 font-bold border-r border-slate-200">전 세대 필수 이주 (3~5년)</td>
-            <td class="py-4 px-3 text-rose-600 font-bold border-r border-slate-200">전 세대 필수 이주 (2~4년)</td>
-            <td class="py-4 px-4 font-black text-emerald-700 bg-emerald-50"><i class="fa-solid fa-circle-check mr-1"></i> 이주 불필요 (살면서 공사)</td>
+            <td class="py-4 px-3 text-rose-600 font-bold border-r border-slate-200">전 세대 이주 가능성 (참고 추정: 3~5년)</td>
+            <td class="py-4 px-3 text-rose-600 font-bold border-r border-slate-200">전 세대 이주 가능성 (참고 추정: 2~4년)</td>
+            <td class="py-4 px-4 font-black text-emerald-700 bg-emerald-50"><i class="fa-solid fa-circle-check mr-1"></i> 이주 필요 여부 확인 필요</td>
           </tr>
           <tr class="border-b border-slate-100 hover:bg-slate-50">
             <td class="py-4 px-4 font-bold text-left pl-5 bg-slate-50 border-r border-slate-200 text-slate-800">소요 기간</td>
-            <td class="py-4 px-3 text-slate-600 border-r border-slate-200">10년 ~ 15년 이상</td>
-            <td class="py-4 px-3 text-slate-600 border-r border-slate-200">6년 ~ 9년 내외</td>
-            <td class="py-4 px-4 font-bold text-blue-900 bg-blue-50">약 1.5년 ~ 2년 (초단기 준공)</td>
+            <td class="py-4 px-3 text-slate-600 border-r border-slate-200">참고 추정: 10년 ~ 15년 이상</td>
+            <td class="py-4 px-3 text-slate-600 border-r border-slate-200">참고 추정: 6년 ~ 9년 내외</td>
+            <td class="py-4 px-4 font-bold text-blue-900 bg-blue-50">참고 추정: 약 1.5년 ~ 2년</td>
           </tr>
           <tr class="hover:bg-slate-50">
             <td class="py-4 px-4 font-bold text-left pl-5 bg-slate-50 border-r border-slate-200 text-slate-800">세대 분담금</td>
-            <td class="py-4 px-3 text-rose-600 font-medium border-r border-slate-200">수억 원대 폭증 예측 불가</td>
-            <td class="py-4 px-3 text-amber-600 font-medium border-r border-slate-200">3~5억 원 이상 고비용</td>
+            <td class="py-4 px-3 text-rose-600 font-medium border-r border-slate-200">참고 추정: 수억 원대 가능성</td>
+            <td class="py-4 px-3 text-amber-600 font-medium border-r border-slate-200">참고 추정: 3~5억 원 이상</td>
             <td class="py-4 px-4 font-extrabold text-amber-800 bg-amber-50">세대당 약 3천만원<br>이하 예상</td>
           </tr>
         </tbody>
@@ -417,14 +515,14 @@
 
     <!-- 요약 (용적률 전제) -->
     <div class="cost-summary p-4 bg-amber-50 border border-amber-200 rounded-xl shadow-sm">
-      <div class="cost-hero"><span>장기수선충당금 + 최소 금액 부담</span><strong>세대당 약 3천만원<br>이하 예상</strong><b>최소 실행금액 500억원 이상 추정</b></div>
+      <div class="cost-hero"><span>장기수선충당금 + 최소 금액 부담(추정)</span><strong>세대당 약 3천만원<br>이하 예상</strong><b>참고 추정: 최소 실행금액 500억원 이상</b></div>
       <ul class="cost-list">
         <li><b>검토 방향</b><span>용적률 여건상 재건축·증축의 사업성이 제한될 수 있다는 전제에서 대수선을 우선 검토</span></li>
         <li><b>확정 전 확인</b><span>구조·설비 진단, 설계·견적, 인허가 가능성으로 공사 범위와 금액을 비교</span></li>
         <li><b>재원 절차</b><span>장기수선계획·사용 가능 항목·사용계획서와 입주자대표회의 의결 요건을 확인</span></li>
       </ul>
     </div>
-    <p class="law-source"><a href="https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1026187795" target="_blank">절차 참고: 공동주택관리법 제29·30조 및 시행령 제31조 (국가법령정보센터)</a></p>
+    <p class="law-source"><a href="https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1026187795" target="_blank">절차 참고: 공동주택관리법 시행규칙 제7조 (국가법령정보센터)</a></p>
     
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3">
       <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 05 / 08</span>
@@ -432,7 +530,7 @@
   </article>
 
   <!-- ==================== SLIDE 6 : 전체 로드맵 & 아젠다 (여백/줄간격 최적화) ==================== -->
-  <article class="ppt-slide p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+  <article class="ppt-slide slide-roadmap p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
       <div>
         <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 02</span>
@@ -446,7 +544,7 @@
       <!-- 6 Steps Timeline (간격 최적화) -->
       <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col">
         <h4 class="text-base font-extrabold text-slate-900 mb-5 border-b border-slate-100 pb-3">
-          <i class="fa-solid fa-bars-progress text-blue-600 mr-1"></i> 대수선 전체 6단계 추진 스케줄
+          <i class="fa-solid fa-bars-progress text-blue-600 mr-1"></i> 대수선 6단계 검토 순서(안)
         </h4>
         <div class="roadmap-list flex-grow flex flex-col justify-evenly pl-4 border-l-2 border-slate-200 text-xs md:text-sm">
           <div class="roadmap-step is-current"><span class="roadmap-number">01</span><div class="text-emerald-700 font-extrabold">주민 공감대 형성 <span class="bg-emerald-100 text-emerald-800 rounded-full px-2 py-0.5 text-[10px] ml-1">현재</span></div></div>
@@ -456,16 +554,16 @@
             <span class="roadmap-number">03</span><div class="text-blue-900 font-black">추진위원회 발족 제안 <span class="bg-blue-600 text-white rounded-full px-2 py-0.5 text-[10px] shadow-sm ml-1">토론방 1차 목표</span></div>
           </div>
           
-          <div class="roadmap-step"><span class="roadmap-number">04</span><div class="text-slate-700 font-bold">리노베이션 추진위원회 공식 발족</div></div>
-          <div class="roadmap-step"><span class="roadmap-number">05</span><div class="text-slate-700 font-bold">1군 시공사 하이엔드 제안서 경쟁 입찰</div></div>
-          <div class="roadmap-step"><span class="roadmap-number">06</span><div class="text-slate-700 font-bold">대수선 인허가 승인 및 시공</div></div>
+          <div class="roadmap-step"><span class="roadmap-number">04</span><div class="text-slate-700 font-bold">추진위원회 공식 발족 여부 검토</div></div>
+          <div class="roadmap-step"><span class="roadmap-number">05</span><div class="text-slate-700 font-bold">시공사 제안 비교 및 입찰 여부 검토</div></div>
+          <div class="roadmap-step"><span class="roadmap-number">06</span><div class="text-slate-700 font-bold">대수선 인허가·시공 가능성 확인</div></div>
         </div>
       </div>
 
       <!-- 행정 추진 아젠다 -->
       <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col">
         <h4 class="text-base font-extrabold text-slate-900 mb-5 border-b border-slate-100 pb-3">
-          <i class="fa-solid fa-briefcase text-slate-600 mr-1"></i> 향후 행정 추진 핵심 아젠다
+          <i class="fa-solid fa-briefcase text-slate-600 mr-1"></i> 향후 행정 검토 아젠다(안)
         </h4>
         <div class="space-y-4 text-xs md:text-sm flex-grow flex flex-col justify-center">
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
@@ -473,12 +571,12 @@
             <p class="text-slate-600 text-xs">오픈채팅방 지속 토론, 설문조사 진행 등으로 추진 타당성과 강력한 근거 마련 및 추진 가능성 판단</p>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-            <strong class="text-blue-800 block mb-1">2. 메이저 건설사 오프라인 설명회 개최</strong>
-            <p class="text-slate-600 text-xs">대수선 전후 획기적 변화 점검 및 분담금 금융 프로그램 등 안내를 통한 공감대 확산</p>
+            <strong class="text-blue-800 block mb-1">2. 메이저 건설사 설명회 개최 여부 검토</strong>
+            <p class="text-slate-600 text-xs">대수선 전후 변화와 분담금 금융 프로그램 안내 가능성을 확인해 공감대 형성 방안을 논의</p>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
             <strong class="text-blue-800 block mb-1">3. 리모델링 추진위원회 발족 제안</strong>
-            <p class="text-slate-600 text-xs">체계적이고 투명한 사업 진행을 위해 공식 발족을 제안</p>
+            <p class="text-slate-600 text-xs">체계적이고 투명한 사업 진행을 위한 공식 발족 필요성을 논의</p>
           </div>
         </div>
         <div class="text-right text-[11px] text-slate-400 mt-3 font-medium">※ 주민 소통 목적의 토론방입니다. 입대의와 무관합니다.</div>
@@ -491,7 +589,7 @@
   </article>
 
   <!-- ==================== SLIDE 7 : 벤치마킹 (실제 추진 단지 뱃지 강조) ==================== -->
-  <article class="ppt-slide p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+  <article class="ppt-slide slide-case p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
       <div>
         <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 03</span>
@@ -663,9 +761,9 @@
       dummy.select();
       try {
         document.execCommand('copy');
-        showToast('리포트 주소가 복사되었습니다. 카카오톡 방에 바로 붙여넣어 공유하세요!');
+        showToast('주소를 복사했습니다. 카카오톡에 붙여넣어 공유하세요.');
       } catch (e) {
-        showToast('브라우저 상단의 주소를 복사하여 공유해주세요.');
+        showToast('복사에 실패했습니다. 브라우저 주소창에서 주소를 복사해 주세요.');
       }
       document.body.removeChild(dummy);
     }

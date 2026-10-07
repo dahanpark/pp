@@ -1,3 +1,9 @@
 node_modules/
 tmp/
 *.log
+sensitive-submissions/
+*인증*제출*.csv
+*참가자*명단*.csv
+*.mp4
+*.mov
+*.avi
