@@ -149,6 +149,26 @@
     .strategy-step p { margin:2px 0 0; }
     .strategy-note { margin:10px 0 0; color:#cbd5e1; font-size:13px; }
 
+    /* 11월 설문 결과와 법규 참고: 모바일에서도 카드 단위로 읽고, A4 PDF에서는 한 페이지를 유지한다. */
+    .survey-lede, .law-lede { margin:12px 0 18px; color:#475569; font-size:16px; line-height:1.55; }
+    .survey-grid, .law-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; flex:1; }
+    .survey-card, .law-card { border:1px solid var(--line); border-radius:18px; background:#fff; padding:22px; display:flex; flex-direction:column; }
+    .survey-card { min-height:150px; border-style:dashed; background:linear-gradient(135deg,#f8fbff,#fff); }
+    .survey-card .survey-no { display:inline-grid; place-items:center; width:32px; height:32px; border-radius:50%; background:#dbeafe; color:#1d4ed8; font-size:14px; font-weight:900; }
+    .survey-card h4 { margin:12px 0 6px; color:var(--ink); font-size:19px; }
+    .survey-card p { margin:0; color:#64748b; font-size:14px; line-height:1.55; }
+    .survey-card .survey-slot { margin-top:auto; padding-top:14px; color:#2563eb; font-size:13px; font-weight:800; border-top:1px solid #dbeafe; }
+    .survey-insight { margin-top:16px; padding:14px 18px; border-radius:14px; background:#eff6ff; border:1px solid #bfdbfe; color:#1e3a8a; font-size:15px; line-height:1.55; }
+    .law-card { border-top:4px solid #2563eb; }
+    .law-card:nth-child(2) { border-top-color:#059669; }
+    .law-card:nth-child(3) { border-top-color:#d97706; }
+    .law-card:nth-child(4) { border-top-color:#7c3aed; }
+    .law-card .law-no { color:#2563eb; font-size:13px; font-weight:900; letter-spacing:.06em; }
+    .law-card h4 { margin:8px 0 8px; color:var(--ink); font-size:19px; line-height:1.3; }
+    .law-card p { margin:0; color:#475569; font-size:14px; line-height:1.55; }
+    .law-card a { margin-top:auto; padding-top:12px; color:#1d4ed8; font-size:13px; font-weight:800; text-decoration:underline; }
+    .law-note { margin-top:14px; color:#64748b; font-size:12px; line-height:1.5; }
+
     @media screen and (max-width:640px) {
       body { padding:12px 0 24px; }
       .ppt-slide { min-height:auto; margin:0 0 16px; border-radius:0; border-left:0; border-right:0; box-shadow:none; }
@@ -167,6 +187,7 @@
       .ppt-slide .mb-5 { margin-bottom:16px !important; }
       .ppt-slide .grid-cols-1.md\:grid-cols-2, .ppt-slide .grid-cols-1.md\:grid-cols-3 { grid-template-columns:minmax(0,1fr) !important; }
       .ppt-slide .flex.items-center.justify-between { align-items:flex-start; }
+      .ppt-slide > div.text-xs.flex.justify-between { flex-direction:column; align-items:flex-start; gap:4px; }
       .premium-card:hover { transform:none; box-shadow:none; }
       header.no-print { position:static; margin:0 12px 12px; padding:16px; border-radius:16px; }
       header.no-print > div:first-child { width:100%; }
@@ -201,6 +222,11 @@
       .ppt-slide tr { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:#fff; }
       .ppt-slide td { border:0 !important; padding:14px 16px !important; }
       .ppt-slide td:first-child { background:#eff6ff; color:#1e3a8a; text-align:left; }
+      .survey-grid, .law-grid { grid-template-columns:1fr; gap:12px; }
+      .survey-card, .law-card { padding:18px; min-height:0; }
+      .survey-card h4, .law-card h4 { font-size:19px; }
+      .survey-card p, .law-card p { font-size:15px; }
+      .survey-insight { font-size:15px; }
     }
   </style>
 </head>
@@ -749,8 +775,48 @@
 
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-1">
       <span>발행: 프라이어팰리스 리노베이션 소유주 토론방</span>
-      <span>SLIDE 08 / 08 (종합 완료)</span>
+      <span>SLIDE 08 / 10</span>
     </div>
+  </article>
+
+  <!-- ==================== SLIDE 9 : 11월 설문 결과 (입력 전 초안) ==================== -->
+  <article class="ppt-slide slide-survey p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
+    <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
+      <div>
+        <span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">November Preview</span>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">11월 설문조사 결과</h3>
+      </div>
+      <span class="text-xs font-bold text-slate-400">SLIDE 09</span>
+    </div>
+    <p class="survey-lede">설문 응답이 취합되면 주요 결과 4개와 그 의미를 한 페이지에서 확인할 수 있도록 구성합니다.</p>
+    <div class="survey-grid">
+      <section class="survey-card"><span class="survey-no">01</span><h4>설문 결과 1</h4><p>질문·응답 수·핵심 결과를 입력합니다.</p><span class="survey-slot">결과 입력 예정</span></section>
+      <section class="survey-card"><span class="survey-no">02</span><h4>설문 결과 2</h4><p>질문·응답 수·핵심 결과를 입력합니다.</p><span class="survey-slot">결과 입력 예정</span></section>
+      <section class="survey-card"><span class="survey-no">03</span><h4>설문 결과 3</h4><p>질문·응답 수·핵심 결과를 입력합니다.</p><span class="survey-slot">결과 입력 예정</span></section>
+      <section class="survey-card"><span class="survey-no">04</span><h4>설문 결과 4</h4><p>질문·응답 수·핵심 결과를 입력합니다.</p><span class="survey-slot">결과 입력 예정</span></section>
+    </div>
+    <div class="survey-insight"><strong>설문 결과 시사점</strong> · 결과 입력 후, 소유주 의견의 공통점과 추가 확인이 필요한 쟁점을 정리합니다.</div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 09 / 10</span></div>
+  </article>
+
+  <!-- ==================== SLIDE 10 : 법규 참고 ==================== -->
+  <article class="ppt-slide slide-law p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+    <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
+      <div>
+        <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Reference</span>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-white">리노베이션·대수선 법규 참고</h3>
+      </div>
+      <span class="text-xs font-bold text-slate-500">SLIDE 10</span>
+    </div>
+    <p class="law-lede text-slate-300">사업 범위와 단지 여건에 따라 적용 절차가 달라질 수 있으므로, 추진 전 관리규약과 관할 지자체의 최신 안내를 확인합니다.</p>
+    <div class="law-grid">
+      <section class="law-card"><span class="law-no">01 · 계획</span><h4>장기수선계획</h4><p>주요 시설의 교체·보수는 장기수선계획을 기준으로 검토합니다. 단지의 계획 내용과 조정 필요 여부를 먼저 확인합니다.</p><a href="https://www.law.go.kr/LSW/lsInfoP.do?ancNo=18937&amp;ancYd=20220610&amp;lsiSeq=276941" target="_blank">공동주택관리법 제29조 참고</a></section>
+      <section class="law-card"><span class="law-no">02 · 재원</span><h4>장기수선충당금 사용</h4><p>장기수선충당금은 장기수선계획에 따른 사용계획서를 작성하고, 입주자대표회의 의결을 거쳐 사용하는 절차를 확인합니다.</p><a href="https://www.law.go.kr/LSW/lsInfoP.do?lsId=012644" target="_blank">공동주택관리법 시행령 제31조 참고</a></section>
+      <section class="law-card"><span class="law-no">03 · 인허가</span><h4>대수선·증축 행위허가</h4><p>공동주택의 증축·개축·대수선은 범위와 기준에 따라 시장·군수·구청장의 허가 또는 신고 대상인지 확인합니다.</p><a href="https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&amp;bylChaChk=N&amp;efGubun=Y&amp;efYd=20240425&amp;joAllCheck=Y&amp;joEfOutPutYn=on&amp;lsiSeq=255407&amp;mokChaChk=N" target="_blank">공동주택관리법 제35조 참고</a></section>
+      <section class="law-card"><span class="law-no">04 · 경미한 행위</span><h4>교체·보수 범위 구분</h4><p>창틀·배관·보안등 등 일부 교체는 경미한 행위 기준이 적용될 수 있습니다. 실제 공사 범위는 사전에 확인합니다.</p><a href="https://www.law.go.kr/lumLsLinkPop.do?lspttninfSeq=132144" target="_blank">공동주택관리법 시행규칙 제15조 참고</a></section>
+    </div>
+    <p class="law-note text-slate-400">본 페이지는 토론을 위한 일반 참고입니다. 개별 공사 범위, 동의 요건 및 인허가 절차는 확정 전 관리규약·설계·관할 행정기관에 확인해야 합니다.</p>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 10 / 10</span></div>
   </article>
 
   <script>
