@@ -204,6 +204,55 @@
     .article-takeaway b { display:block; margin-bottom:5px; color:#1e293b; font-size:17px; }
     .article-takeaway p { margin:0; color:#475569; font-size:14px; line-height:1.45; }
     .article-caveat { margin:12px 0 0; padding:10px 13px; border:1px solid #fcd34d; border-radius:10px; color:#fde68a; background:#78350f55; font-size:12px; line-height:1.45; }
+    .core-diagram { display:flex; flex:1; flex-direction:column; justify-content:center; min-height:0; padding:14px 10px 2px; }
+    .core-context { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; color:#475569; font-size:14px; }
+    .core-context b { color:#1d4ed8; margin-right:2px; }
+    .core-context span { padding:7px 11px; border:1px solid #cbd5e1; border-radius:999px; background:#fff; font-weight:700; }
+    .core-connector { height:24px; display:grid; place-items:center; color:#2563eb; font-size:27px; font-weight:900; line-height:1; }
+    .core-stage { display:block; color:#93c5fd; font-size:13px; font-weight:900; letter-spacing:.05em; }
+    .core-proposal { padding:20px; border:1px solid #1d4ed8; border-radius:18px; color:white; background:linear-gradient(120deg,#0f172a,#1e3a8a); box-shadow:0 16px 30px #1e3a8a25; text-align:center; }
+    .core-proposal h4 { margin:5px 0; color:#fff; font-size:28px; line-height:1.2; font-weight:900; word-break:keep-all; }
+    .core-proposal p { margin:0; color:#cbd5e1; font-size:14px; }
+    .core-pillars { text-align:center; }
+    .core-pillars > .core-stage { color:#1d4ed8; margin-bottom:9px; }
+    .core-pillar-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
+    .core-pillar { display:flex; align-items:center; gap:12px; min-height:100px; padding:14px 18px; border:1px solid #bfdbfe; border-top:5px solid #3b82f6; border-radius:16px; background:#fff; box-shadow:0 8px 20px #0f172a10; text-align:left; }
+    .core-pillar:nth-child(2) { border-top-color:#10b981; }
+    .core-pillar:nth-child(3) { border-top-color:#f59e0b; }
+    .core-pillar span { display:grid; flex:0 0 34px; height:34px; place-items:center; border-radius:50%; color:#1d4ed8; background:#dbeafe; font-size:14px; font-weight:900; }
+    .core-pillar:nth-child(2) span { background:#d1fae5; color:#047857; }
+    .core-pillar:nth-child(3) span { background:#fef3c7; color:#b45309; }
+    .core-pillar h5 { margin:0; color:#0f172a; font-size:18px; line-height:1.25; font-weight:900; word-break:keep-all; }
+    .core-result { padding:17px 22px; border:1px solid #047857; border-radius:18px; background:linear-gradient(110deg,#065f46,#047857); box-shadow:0 12px 26px #04785730; text-align:center; }
+    .core-result .core-stage { color:#a7f3d0; }
+    .core-result h4 { margin:5px 0 0; color:#fff; font-size:28px; line-height:1.2; font-weight:900; word-break:keep-all; }
+    .core-qualification { margin:10px 0 0; color:#64748b; font-size:12px; text-align:center; }
+    .strategy-v2 { margin:14px 0 0; padding:20px; border:1px solid #475569; border-radius:18px; background:#1e293b; }
+    .strategy-v2-head { display:flex; align-items:baseline; gap:12px; margin-bottom:14px; }
+    .strategy-v2-head span { color:#fbbf24; font-size:13px; font-weight:900; white-space:nowrap; }
+    .strategy-v2-head h4 { margin:0; color:#fff; font-size:20px; font-weight:900; }
+    .strategy-v2-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .strategy-v2-card { min-height:128px; padding:15px; border:1px solid #64748b; border-radius:13px; background:#334155; }
+    .strategy-v2-card span { display:block; color:#fcd34d; font-size:13px; font-weight:900; }
+    .strategy-v2-card b { display:block; margin:6px 0; color:#fff; font-size:18px; }
+    .strategy-v2-card p { margin:0; color:#e2e8f0; font-size:14px; line-height:1.45; }
+    .strategy-v2 > p { margin:12px 0 0; color:#fcd34d; font-size:13px; }
+    .article-v2-body { flex:1; padding:12px 0 3px; }
+    .article-v2-headline { margin:0 0 5px; color:#fff; font-size:22px; line-height:1.25; font-weight:900; word-break:keep-all; }
+    .article-v2-source { color:#cbd5e1; font-size:12px; }
+    .article-v2-source a, .article-v2-card a { color:#93c5fd; text-decoration:underline; }
+    .article-v2-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:13px; }
+    .article-v2-card { min-width:0; padding:10px; border:1px solid #475569; border-radius:16px; background:#1e293b; }
+    .article-v2-card img { display:block; width:100%; height:136px; object-fit:cover; border-radius:9px; }
+    .article-v2-card small { display:block; margin:5px 1px 10px; color:#cbd5e1; font-size:11px; }
+    .article-v2-card h5 { margin:0 0 6px; color:#fff; font-size:19px; }
+    .article-v2-card h5 em { color:#93c5fd; font-size:14px; font-style:normal; }
+    .article-v2-card p { margin:0 0 8px; color:#e2e8f0; font-size:14px; line-height:1.4; }
+    .article-v2-fact { padding:8px 10px; border-radius:9px; background:#334155; color:#e2e8f0; font-size:13px; line-height:1.35; }
+    .article-v2-card a { display:inline-block; margin-top:6px; font-size:11px; }
+    .article-v2-insight { display:flex; gap:10px; align-items:center; margin-top:11px; padding:10px 13px; border-radius:10px; background:#eff6ff; color:#1e3a8a; font-size:13px; }
+    .article-v2-insight b { flex:0 0 auto; }
+    .article-v2-caveat { margin:7px 0 0; color:#fcd34d; font-size:12px; line-height:1.35; }
 
     @media screen and (max-width:640px) {
       body { padding:12px 0 24px; }
@@ -277,6 +326,29 @@
       .article-photos, .article-takeaways { grid-template-columns:1fr; }
       .article-photo img { height:180px; }
       .article-takeaway p { font-size:15px; }
+      .core-diagram { padding:18px 0 4px; }
+      .core-context { justify-content:flex-start; gap:7px; }
+      .core-context b { width:100%; }
+      .core-context span { font-size:12px; padding:7px 9px; }
+      .core-connector { height:32px; }
+      .core-proposal h4, .core-result h4 { font-size:23px; }
+      .core-proposal p { font-size:14px; }
+      .core-pillar-grid, .strategy-v2-grid, .article-v2-grid { grid-template-columns:1fr; }
+      .core-pillar { min-height:76px; }
+      .core-pillar h5 { font-size:19px; }
+      .strategy-v2 { padding:16px; }
+      .strategy-v2-head { display:block; }
+      .strategy-v2-head h4 { margin-top:5px; font-size:19px; }
+      .strategy-v2-card { min-height:0; }
+      .article-v2-headline { font-size:20px; }
+      .article-v2-card img { height:180px; }
+      .article-v2-card p { font-size:15px; }
+      .article-v2-insight { align-items:flex-start; flex-direction:column; font-size:14px; }
+      .slide-core-v2 > div:first-child, .slide-article-v2 > div:first-child { display:block !important; }
+      .slide-core-v2 > div:first-child > span:last-child, .slide-article-v2 > div:first-child > span:last-child { display:none; }
+      .slide-core-v2 > div:first-child h3, .slide-article-v2 > div:first-child h3 { word-break:keep-all; }
+      .slide-case .bg-blue-600 { flex:0 0 auto; white-space:nowrap; }
+      .slide-case .bg-amber-600 { flex:0 0 52px; }
     }
   </style>
 </head>
@@ -391,10 +463,32 @@
     </div>
   </article>
 
+<article class="ppt-slide slide-core-v2 p-8 md:p-12 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 border-t-4 border-slate-200">
+    <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
+      <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">Chapter 02 · 방향 제안</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">핵심 논의 주제 및 지향점</h3></div>
+      <span class="text-xs font-bold text-slate-400">SLIDE 03</span>
+    </div>
+    <div class="core-diagram">
+      <div class="core-context"><b>왜 지금인가</b><span>공용시설 노후화</span><span>장기수선 방식의 한계</span><span>신축 단지와 상품성 격차</span></div>
+      <div class="core-connector" aria-hidden="true">↓</div>
+      <section class="core-proposal"><span class="core-stage">01 · 검토 방향</span><h4>대수선 및 프리미엄 브랜드 적용 검토</h4><p>단지 여건·공사 가능 범위·브랜드 조건을 확인해 실행 가능한 대안을 비교합니다.</p></section>
+      <div class="core-connector" aria-hidden="true">↓</div>
+      <section class="core-pillars"><div class="core-stage">02 · 개선의 세 가지 축</div><div class="core-pillar-grid">
+        <div class="core-pillar"><span>01</span><h5>프리미엄급<br>커뮤니티 확충</h5></div>
+        <div class="core-pillar"><span>02</span><h5>지하주차장·공용부<br>현대화</h5></div>
+        <div class="core-pillar"><span>03</span><h5>랜드마크 문주·<br>외관 특화</h5></div>
+      </div></section>
+      <div class="core-connector" aria-hidden="true">↓</div>
+      <section class="core-result"><span class="core-stage">03 · 지향하는 결과</span><h4>프리미엄 주거환경 및 부동산 가치 확보</h4></section>
+      <p class="core-qualification">※ 위 내용은 추진 방향 초안입니다. 공사 범위와 브랜드 적용, 비용 및 가치 효과는 검토·의결을 거쳐 판단합니다.</p>
+    </div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 03 / 15</span></div>
+  </article>
+
 <article class="ppt-slide slide-survey p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
     <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
       <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">October Survey · 1/4</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">10월 설문조사 결과</h3></div>
-      <span class="text-xs font-bold text-slate-400">SLIDE 03</span>
+      <span class="text-xs font-bold text-slate-400">SLIDE 04</span>
     </div>
     <p class="survey-lede">전체 14개 결과 중 01~04번을 정리할 자리입니다. 조사 질문과 응답 수를 함께 표시한 뒤 해석을 작성합니다.</p>
     <div class="survey-grid">
@@ -404,13 +498,13 @@
       <section class="survey-card"><span class="survey-no">04</span><h4>설문 결과 04</h4><p>질문, 응답 수, 핵심 결과를 입력합니다.</p><span class="survey-slot">설문 결과 입력 예정</span></section>
     </div>
     <div class="survey-insight"><strong>이 페이지의 시사점</strong> · 응답 취합 후 공통 의견과 추가 확인할 쟁점을 정리합니다.</div>
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 03 / 15</span></div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 04 / 15</span></div>
   </article>
 
 <article class="ppt-slide slide-survey p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
     <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
       <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">October Survey · 2/4</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">10월 설문조사 결과</h3></div>
-      <span class="text-xs font-bold text-slate-400">SLIDE 04</span>
+      <span class="text-xs font-bold text-slate-400">SLIDE 05</span>
     </div>
     <p class="survey-lede">전체 14개 결과 중 05~08번을 정리할 자리입니다. 조사 질문과 응답 수를 함께 표시한 뒤 해석을 작성합니다.</p>
     <div class="survey-grid">
@@ -420,13 +514,13 @@
       <section class="survey-card"><span class="survey-no">08</span><h4>설문 결과 08</h4><p>질문, 응답 수, 핵심 결과를 입력합니다.</p><span class="survey-slot">설문 결과 입력 예정</span></section>
     </div>
     <div class="survey-insight"><strong>이 페이지의 시사점</strong> · 응답 취합 후 공통 의견과 추가 확인할 쟁점을 정리합니다.</div>
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 04 / 15</span></div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 05 / 15</span></div>
   </article>
 
 <article class="ppt-slide slide-survey p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
     <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
       <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">October Survey · 3/4</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">10월 설문조사 결과</h3></div>
-      <span class="text-xs font-bold text-slate-400">SLIDE 05</span>
+      <span class="text-xs font-bold text-slate-400">SLIDE 06</span>
     </div>
     <p class="survey-lede">전체 14개 결과 중 09~12번을 정리할 자리입니다. 조사 질문과 응답 수를 함께 표시한 뒤 해석을 작성합니다.</p>
     <div class="survey-grid">
@@ -436,13 +530,13 @@
       <section class="survey-card"><span class="survey-no">12</span><h4>설문 결과 12</h4><p>질문, 응답 수, 핵심 결과를 입력합니다.</p><span class="survey-slot">설문 결과 입력 예정</span></section>
     </div>
     <div class="survey-insight"><strong>이 페이지의 시사점</strong> · 응답 취합 후 공통 의견과 추가 확인할 쟁점을 정리합니다.</div>
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 05 / 15</span></div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 06 / 15</span></div>
   </article>
 
 <article class="ppt-slide slide-survey survey-final p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
     <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
       <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">October Survey · 4/4</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">10월 설문조사 결과</h3></div>
-      <span class="text-xs font-bold text-slate-400">SLIDE 06</span>
+      <span class="text-xs font-bold text-slate-400">SLIDE 07</span>
     </div>
     <p class="survey-lede">전체 14개 결과 중 13~14번을 정리할 자리입니다. 조사 질문과 응답 수를 함께 표시한 뒤 해석을 작성합니다.</p>
     <div class="survey-grid">
@@ -450,86 +544,7 @@
       <section class="survey-card"><span class="survey-no">14</span><h4>설문 결과 14</h4><p>질문, 응답 수, 핵심 결과를 입력합니다.</p><span class="survey-slot">설문 결과 입력 예정</span></section>
     </div>
     <div class="survey-synthesis"><h4>14개 결과 종합 시사점</h4><ul><li><b>공통된 우선순위</b>응답 취합 후 입력</li><li><b>의견이 갈린 쟁점</b>응답 취합 후 입력</li><li><b>다음 확인 사항</b>추가 검토 후 입력</li></ul></div>
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 06 / 15</span></div>
-  </article>
-
-<article class="ppt-slide slide-core p-8 md:p-12 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 border-t-4 border-slate-200">
-    <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
-      <div>
-        <span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">Chapter 02</span>
-        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">핵심 논의 주제 및 지향점</h3>
-      </div>
-      <span class="text-xs font-bold text-slate-400">SLIDE 07</span>
-    </div>
-
-    <!-- 현황 진단 다이어그램 -->
-    <div class="problem-flow flex items-center justify-between gap-2 md:gap-4 mt-6 mb-3">
-      <div class="problem-label">① 왜 지금 검토하나 · 현재의 과제</div>
-      <div class="bg-white border border-slate-200 rounded-xl p-4 flex-1 text-center shadow-md shadow-slate-200/50">
-        <span class="problem-index">01</span><div class="text-slate-800 font-extrabold text-xs md:text-sm">주거환경 지속 낙후</div><small>공용공간·시설의 노후화</small>
-      </div>
-      <div class="flow-plus text-blue-500 font-black text-lg md:text-xl">+</div>
-      <div class="bg-white border border-slate-200 rounded-xl p-4 flex-1 text-center shadow-md shadow-slate-200/50">
-        <span class="problem-index">02</span><div class="text-slate-800 font-extrabold text-xs md:text-sm">장충금 투입의 한계</div><small>계획·적립·사용 기준 검토 필요</small>
-      </div>
-      <div class="flow-plus text-blue-500 font-black text-lg md:text-xl">+</div>
-      <div class="bg-white border border-slate-200 rounded-xl p-4 flex-1 text-center shadow-md shadow-slate-200/50">
-        <span class="problem-index">03</span><div class="text-slate-800 font-extrabold text-xs md:text-sm">20년차 아파트의 한계</div><small>신축 단지와 상품성 격차</small>
-      </div>
-    </div>
-    
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 text-blue-900 rounded-xl p-3 text-center text-xs md:text-sm font-bold shadow-sm mb-5 problem-summary">
-      <span class="flow-arrow" aria-hidden="true">↓</span>
-      <span class="core-step">② 지향점 · </span>
-      <b>프라이어팰리스 가치 확보를 위해 리노베이션을 추진할 단계입니다.</b>
-    </div>
-
-    <!-- 1군 건설사 상향 검토 (하이엔드 스타일) -->
-    <div class="bg-slate-900 text-white p-6 rounded-2xl mb-4 shadow-xl flex items-start gap-5 relative overflow-hidden border border-slate-800">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl"></div>
-      
-      <div class="relative z-10 priority-copy">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="px-2.5 py-0.5 bg-amber-400 text-slate-950 font-black text-[10px] md:text-xs rounded uppercase tracking-wider">③ 우선 검토 방향</span>
-          <h4 class="text-lg md:text-xl font-bold text-white tracking-tight">대수선 검토 및 프리미엄 브랜드 적용 검토</h4>
-        </div>
-        <ul class="priority-list">
-          <li>단순 보수를 넘어 <b>1군 건설사 하이엔드 브랜드 적용 가능성</b> 검토</li>
-          <li>단지 여건·공사 범위·브랜드 적용 조건을 확인한 뒤 대안 마련</li>
-        </ul>
-      </div>
-      <div class="priority-logo"><img src="../assets/hillstate-signature.png" alt="힐스테이트 공식 로고"></div>
-    </div>
-
-    <!-- 3 Pillars Grid (Premium Cards) -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 flex-grow">
-      <!-- 1. 커뮤니티 -->
-      <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
-        <h5 class="text-base font-extrabold text-slate-900 mb-2">프리미엄급 커뮤니티 확충</h5>
-        <ul class="pillar-list"><li>GDR 스크린 골프연습장</li><li>프리미엄 피트니스 센터</li><li>스터디 라운지·주민 카페테리아</li></ul>
-        <div class="text-[11px] font-bold text-blue-700 pt-3 border-t border-slate-100">기대 효과(안) · 삶의 품격과 입주민 편의 극대화</div>
-      </div>
-
-      <!-- 2. 주차장 (문구 변경 적용) -->
-      <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
-        <h5 class="text-base font-extrabold text-slate-900 mb-2">지하주차장 및 공용부 현대화</h5>
-        <ul class="pillar-list"><li>바닥 에폭시 전면 재시공</li><li>고조도 센서 LED 조명 교체</li><li>스마트 주차 유도·충전 구역</li></ul>
-        <div class="text-[11px] font-bold text-indigo-700 pt-3 border-t border-slate-100">기대 효과(안) · 밝고 안전한 단지 첫인상 완성</div>
-      </div>
-
-      <!-- 3. 문주/특화 -->
-      <div class="premium-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col shadow-lg shadow-slate-200/50">
-        <h5 class="text-base font-extrabold text-slate-900 mb-2">랜드마크 문주 & 외관 특화</h5>
-        <ul class="pillar-list"><li>랜드마크 문주 디자인 특화</li><li>커튼월 룩·프리미엄 외벽 도장</li><li>수경 조경·야간 경관조명</li></ul>
-        <div class="text-[11px] font-bold text-emerald-700 pt-3 border-t border-slate-100">기대 효과(안) · 외부 시선을 사로잡는 랜드마크화</div>
-      </div>
-    </div>
-
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-4">
-      <span>프라이어팰리스 리노베이션 소유주 토론방</span>
-      <span>SLIDE 07 / 15</span>
-    </div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 07 / 15</span></div>
   </article>
 
 <article class="ppt-slide slide-october p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
@@ -741,7 +756,7 @@
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
       <div>
         <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 03</span>
-        <h3 class="text-2xl md:text-3xl font-extrabold text-white">대상 건설사 리노베이션 방향 / 유사사례</h3>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-white">대상 건설사 리노베이션 방향 및 추진 전략</h3>
       </div>
       <span class="text-xs font-bold text-slate-500">SLIDE 12</span>
     </div>
@@ -794,67 +809,35 @@
       </div>
     </div>
 
-    <!-- 잠실권 실제 사례: 엘스와 리센츠 구분 -->
-    <div class="jamsil-case-grid">
-      <div class="jamsil-case els-case">
-        <strong>잠실 엘스 | 입대의 의결 후 동의 절차 진행</strong>
-        <div class="case-timeline"><span><b>6.23</b> 입대의 의결</span><i>→</i><span><b>7.2</b> 입주자 동의 공고</span></div>
-        <p>증축 행위허가·신고 안건을 의결한 뒤 전체 입주자 3분의 2 이상 동의 절차를 공고했습니다. 보도상 계획은 약 483㎡ 증축·2,103㎡ 용도변경입니다.</p>
-        <a href="https://www.fnnews.com/news/202606281847423325" target="_blank">출처: 파이낸셜뉴스, 2026.06.28 · 주민 공고문(2026.07.02)</a>
-      </div>
-      <div class="jamsil-case licentz-case">
-        <strong>잠실 리센츠 | 장기수선충당금 활용 사례</strong>
-        <p>커뮤니티시설을 2,086㎡로 확충하고 약 45억 원을 장기수선충당금으로 조달한 사례입니다. 단지별 계획·시설 성격·절차 검토가 전제입니다.</p>
-        <a href="https://www.hankyung.com/article/2026082149276" target="_blank">출처: 한국경제, 2026.08.21</a>
-      </div>
-    </div>
-
     <!-- 추진 전략 -->
-    <div class="strategy-box p-4 bg-slate-800 border border-slate-600 rounded-xl text-left text-xs md:text-sm shadow-sm mt-1">
-      <div class="flex items-center gap-2 mb-1.5">
-        <i class="fa-solid fa-lightbulb text-amber-400 text-lg"></i>
-        <strong class="text-white font-black">추진 전략:</strong>
+    <section class="strategy-v2">
+      <div class="strategy-v2-head"><span>실행 경로</span><h4>검토 결과를 주민에게 공개하고, 단계별로 결정합니다</h4></div>
+      <div class="strategy-v2-grid">
+        <div class="strategy-v2-card"><span>01 · 가능 범위</span><b>구조·법규부터 확인</b><p>대수선·증축 가능 범위와 행위허가, 필요한 동의 요건을 점검합니다.</p></div>
+        <div class="strategy-v2-card"><span>02 · 비용과 재원</span><b>견적·운영비 함께 비교</b><p>장기수선계획, 충당금 사용 가능 항목, 공사비와 이후 운영비를 비교합니다.</p></div>
+        <div class="strategy-v2-card"><span>03 · 공식 절차</span><b>자료 공개 후 의결·동의</b><p>검토안과 부담액을 공개한 뒤 필요한 입주자대표회의 의결과 소유자 동의를 진행합니다.</p></div>
       </div>
-      <div class="strategy-list">
-        <div class="strategy-step"><span>01</span><div><b>가능 범위 먼저 확인</b><p>구조·법규 검토로 대수선·증축 가능 범위와 행위허가·동의 요건을 판단</p></div></div>
-        <div class="strategy-step"><span>02</span><div><b>재원과 운영비 점검</b><p>장기수선계획, 충당금 적립액·사용 가능 항목, 공사 후 운영비를 확인</p></div></div>
-        <div class="strategy-step"><span>03</span><div><b>의결과 동의 절차 추진</b><p>검토 결과를 공개한 뒤 입주자대표회의 의결과 필요한 소유자 동의를 진행</p></div></div>
-      </div>
-      <p class="strategy-note">장기수선충당금 활용은 확정 재원으로 전제하지 않고, 적법성·재원 여건을 확인한 뒤 판단합니다.</p>
-    </div>
-    
+      <p>장기수선충당금 활용은 확정 재원으로 전제하지 않습니다. 적법성과 재원 여건을 확인한 뒤 판단합니다.</p>
+    </section>
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3">
       <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 12 / 15</span>
     </div>
   </article>
 
-<article class="ppt-slide slide-article p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+<article class="ppt-slide slide-article-v2 p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
-      <div>
-        <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 04 · 언론 보도 사례</span>
-        <h3 class="text-2xl md:text-3xl font-extrabold text-white">잠실 대단지 커뮤니티 개선 사례</h3>
-      </div>
+      <div><span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 04 · 잠실권 사례</span><h3 class="text-2xl md:text-3xl font-extrabold text-white">잠실 엘스·리센츠의 커뮤니티 개선</h3></div>
       <span class="text-xs font-bold text-slate-500">SLIDE 13</span>
     </div>
-    <div>
-      <h4 class="article-headline">“가구당 86만원 투자하면 집값 5000만원 오른다” 잠실 엘스가 커뮤니티 센터 만드는 이유</h4>
-      <div class="article-source">땅집고 · 배민주 기자 · 2026.10.06 입력, 10.07 수정 · <a href="https://realty.chosun.com/site/data/html_dir/2026/10/06/2026100601784.html" target="_blank" rel="noopener noreferrer">원문 기사 보기</a></div>
-      <div class="article-photos">
-        <figure class="article-photo">
-          <img src="../assets/article/jamsil-els.jpg" alt="잠실 엘스 아파트 전경. 기사 사진" loading="eager">
-          <figcaption>잠실 엘스 전경 · 사진: 강태민 기자 / 땅집고</figcaption>
-        </figure>
-        <figure class="article-photo">
-          <img src="../assets/article/jamsil-licentz.jpg" alt="리센츠 단지 커뮤니티센터 외관. 기사 사진" loading="eager">
-          <figcaption>리센츠 커뮤니티센터 외관 · 사진: 강태민 기자 / 땅집고</figcaption>
-        </figure>
+    <div class="article-v2-body">
+      <h4 class="article-v2-headline">“가구당 86만원 투자하면 집값 5000만원 오른다” 잠실 엘스가 커뮤니티 센터 만드는 이유</h4>
+      <div class="article-v2-source">땅집고 · 배민주 기자 · 2026.10.06 입력, 10.07 수정 · <a href="https://realty.chosun.com/site/data/html_dir/2026/10/06/2026100601784.html" target="_blank" rel="noopener noreferrer">기사 원문</a></div>
+      <div class="article-v2-grid">
+        <section class="article-v2-card"><img src="../assets/article/jamsil-els.jpg" alt="잠실 엘스 아파트 전경. 기사 사진"><small>잠실 엘스 전경 · 사진: 강태민 기자 / 땅집고</small><h5>잠실 엘스 <em>계획·동의 절차</em></h5><p>5,678가구 단지가 약 49억 원으로 약 782평의 시설 확충을 추진합니다. 기사 기준 세대당 약 86만 원으로 단순 계산됩니다.</p><div class="article-v2-fact">6.23 입대의 의결 → 7.2 입주자 동의 공고<br>보도상 약 483㎡ 증축·2,103㎡ 용도변경 계획</div><a href="https://www.fnnews.com/news/202606281847423325" target="_blank" rel="noopener noreferrer">추가 자료: 파이낸셜뉴스, 2026.06.28</a></section>
+        <section class="article-v2-card"><img src="../assets/article/jamsil-licentz.jpg" alt="리센츠 단지 커뮤니티센터 외관. 기사 사진"><small>리센츠 커뮤니티센터 · 사진: 강태민 기자 / 땅집고</small><h5>잠실 리센츠 <em>운영·재원 사례</em></h5><p>5,563가구 리센츠는 약 631평의 커뮤니티센터를 2026년 8월 열었습니다. 보도에 따르면 약 45억 원을 장기수선충당금으로 조달했습니다.</p><div class="article-v2-fact">기존 공간 개선과 증축을 결합한 사례<br>단지별 계획·시설 성격·절차 검토가 전제</div><a href="https://www.hankyung.com/article/2026082149276" target="_blank" rel="noopener noreferrer">추가 자료: 한국경제, 2026.08.21</a></section>
       </div>
-      <div class="article-takeaways">
-        <div class="article-takeaway"><b>잠실 엘스의 계획</b><p>5,678가구 단지가 약 49억 원으로 수영장·사우나·헬스장·골프연습장 등을 포함한 약 782평 규모의 시설 확충을 추진합니다. 인허가와 세부 설계는 남아 있습니다.</p></div>
-        <div class="article-takeaway"><b>리센츠의 운영 사례</b><p>인접한 5,563가구 리센츠는 기존 공간을 개선한 약 631평의 커뮤니티센터를 2026년 8월 열었습니다. 두 단지는 서로 다른 공간 구성 방식을 택했습니다.</p></div>
-        <div class="article-takeaway"><b>프라이어팰리스에 주는 시사점</b><p>필요 시설과 사용 수요를 먼저 확인하고, 가능한 공사 범위·재원·운영비를 함께 비교해야 합니다. 단지 규모만으로 같은 비용이나 효과를 기대할 수는 없습니다.</p></div>
-      </div>
-      <p class="article-caveat">기사의 ‘가구당 86만 원’은 엘스 사업비를 전체 가구 수로 나눈 단순 계산입니다. ‘5,000만 원 가치 상승’은 중개업소의 가능성 언급으로, 실현되거나 우리 단지에 적용되는 수치가 아닙니다.</p>
+      <div class="article-v2-insight"><b>우리 단지에 적용할 시사점</b><span>필요 시설과 수요를 확인하고 공사 가능 범위·재원·운영비를 함께 비교해야 합니다.</span></div>
+      <p class="article-v2-caveat">※ 기사 제목의 ‘5,000만 원 가치 상승’은 중개업소의 가능성 언급이며, 실현되거나 우리 단지에 적용되는 수치가 아닙니다.</p>
     </div>
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 13 / 15</span></div>
   </article>
