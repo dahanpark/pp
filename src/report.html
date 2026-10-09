@@ -213,13 +213,15 @@
     .slide-rules .p2-rules > div { background:#fff; }
     .core-diagram { display:flex; flex:1; min-height:0; padding:12px 0 2px; }
     .core-framework { display:flex; flex:1; min-height:0; flex-direction:column; justify-content:space-between; padding:14px; border:1px solid #475569; border-radius:22px; background:#1e293b; box-shadow:0 18px 45px #02061755; }
-    .core-context { display:grid; grid-template-columns:185px 1fr; gap:14px; align-items:center; padding:14px 17px; border:1px solid #f59e0b; border-radius:15px; background:linear-gradient(115deg,#451a03,#78350f); box-shadow:0 8px 24px #f59e0b20; }
+    .core-context { display:grid; grid-template-columns:1fr; gap:10px; padding:12px 15px; border:1px solid #f59e0b; border-radius:15px; background:linear-gradient(115deg,#451a03,#78350f); box-shadow:0 8px 24px #f59e0b20; }
     .core-context-title { display:flex; align-items:center; gap:10px; }
     .core-context-title > span { display:grid; flex:0 0 36px; height:36px; place-items:center; border-radius:50%; background:#fbbf24; color:#422006; font-size:13px; font-weight:900; }
     .core-context-title small { display:block; color:#fde68a; font-size:12px; font-weight:800; }
     .core-context-title h4 { margin:2px 0 0; color:#fff; font-size:23px; font-weight:900; }
-    .core-context-reasons { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
-    .core-context-reasons span { padding:9px 8px; border:1px solid #fbbf2466; border-radius:10px; background:#fffaf0; color:#78350f; font-size:14px; font-weight:900; text-align:center; }
+    .core-context-reasons { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:7px; }
+    .core-context-reasons div { min-width:0; padding:8px 9px; border:1px solid #fbbf2466; border-radius:10px; background:#fffaf0; text-align:left; }
+    .core-context-reasons b { display:block; color:#78350f; font-size:14px; line-height:1.25; font-weight:900; word-break:keep-all; }
+    .core-context-reasons small { display:block; margin-top:4px; color:#92400e; font-size:11px; line-height:1.35; word-break:keep-all; }
     .core-connector { position:relative; height:20px; display:grid; place-items:center; color:#60a5fa; font-size:20px; font-weight:900; line-height:1; }
     .core-connector::before { content:""; position:absolute; top:0; bottom:0; width:2px; background:#3b82f6; opacity:.55; }
     .core-connector span { position:relative; z-index:1; padding:0 7px; background:#1e293b; }
@@ -344,7 +346,9 @@
       .core-framework { gap:0; padding:12px; }
       .core-context { grid-template-columns:1fr; gap:11px; padding:15px; }
       .core-context-reasons { grid-template-columns:1fr; }
-      .core-context-reasons span { font-size:14px; padding:9px; }
+      .core-context-reasons div { padding:11px 12px; }
+      .core-context-reasons b { font-size:16px; }
+      .core-context-reasons small { font-size:13px; }
       .core-connector { height:32px; }
       .core-proposal h4, .core-result h4 { font-size:23px; }
       .core-proposal p { font-size:14px; }
@@ -489,7 +493,13 @@
       <div class="core-framework">
         <section class="core-context">
           <div class="core-context-title"><span>00</span><div><small>가장 중요한 출발점</small><h4>왜 지금인가</h4></div></div>
-          <div class="core-context-reasons"><span>공용시설 노후화</span><span>장기수선 방식의 한계</span><span>신축 단지와 상품성 격차</span></div>
+          <div class="core-context-reasons">
+            <div><b>20년차 아파트</b><small>시설과 상품성의 노후화가 본격화되는 시기</small></div>
+            <div><b>리노베이션 시점 도래</b><small>부분 보수를 넘어 종합 정비 대안을 검토할 단계</small></div>
+            <div><b>공용시설 노후화</b><small>주차장·커뮤니티·외관의 개선 요구 확대</small></div>
+            <div><b>장기수선충당금 방식의 한계</b><small>단순 교체·보수만으로 상품성 격차 해소 어려움</small></div>
+            <div><b>주변 대비 부동산 가치 저하</b><small>신축·개선 단지와 주거환경 경쟁력 격차</small></div>
+          </div>
         </section>
         <div class="core-connector" aria-hidden="true"><span>↓</span></div>
         <section class="core-proposal"><span class="core-stage">01 · 검토 방향</span><h4>대수선 및 프리미엄 브랜드 적용 검토</h4><p>단지 여건·공사 가능 범위·브랜드 조건을 확인해 실행 가능한 대안을 비교합니다.</p></section>
