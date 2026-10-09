@@ -2,6 +2,8 @@
 
 입주민 배포용 공감 리포트를 HTML 원본 중심으로 관리하는 저장소입니다.
 
+공개용 HTML: https://dahanpark.github.io/pp/
+
 ## 구성
 
 - `src/report.html`: 모바일 웹 발행과 PDF 제작의 기준 원본
