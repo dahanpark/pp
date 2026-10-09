@@ -204,29 +204,43 @@
     .article-takeaway b { display:block; margin-bottom:5px; color:#1e293b; font-size:17px; }
     .article-takeaway p { margin:0; color:#475569; font-size:14px; line-height:1.45; }
     .article-caveat { margin:12px 0 0; padding:10px 13px; border:1px solid #fcd34d; border-radius:10px; color:#fde68a; background:#78350f55; font-size:12px; line-height:1.45; }
-    .core-diagram { display:flex; flex:1; flex-direction:column; justify-content:center; min-height:0; padding:14px 10px 2px; }
-    .core-context { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; color:#475569; font-size:14px; }
-    .core-context b { color:#1d4ed8; margin-right:2px; }
-    .core-context span { padding:7px 11px; border:1px solid #cbd5e1; border-radius:999px; background:#fff; font-weight:700; }
-    .core-connector { height:24px; display:grid; place-items:center; color:#2563eb; font-size:27px; font-weight:900; line-height:1; }
+    .slide-rules, .slide-core-v2 { background:#0f172a; color:#e2e8f0; }
+    .slide-rules > div:first-child, .slide-core-v2 > div:first-child { border-color:#334155; }
+    .slide-rules > div:first-child h3, .slide-core-v2 > div:first-child h3 { color:#fff; }
+    .slide-rules > div:first-child span:first-child, .slide-core-v2 > div:first-child span:first-child { color:#93c5fd; }
+    .slide-rules > div:last-child, .slide-core-v2 > div:last-child { color:#94a3b8; border-color:#334155; }
+    .slide-rules .p2-intro { border:1px solid #1d4ed8; border-left:5px solid #3b82f6; background:#172554; color:#dbeafe; border-radius:12px; }
+    .slide-rules .p2-rules > div { background:#fff; }
+    .core-diagram { display:flex; flex:1; min-height:0; padding:12px 0 2px; }
+    .core-framework { display:flex; flex:1; min-height:0; flex-direction:column; justify-content:space-between; padding:14px; border:1px solid #475569; border-radius:22px; background:#1e293b; box-shadow:0 18px 45px #02061755; }
+    .core-context { display:grid; grid-template-columns:185px 1fr; gap:14px; align-items:center; padding:14px 17px; border:1px solid #f59e0b; border-radius:15px; background:linear-gradient(115deg,#451a03,#78350f); box-shadow:0 8px 24px #f59e0b20; }
+    .core-context-title { display:flex; align-items:center; gap:10px; }
+    .core-context-title > span { display:grid; flex:0 0 36px; height:36px; place-items:center; border-radius:50%; background:#fbbf24; color:#422006; font-size:13px; font-weight:900; }
+    .core-context-title small { display:block; color:#fde68a; font-size:12px; font-weight:800; }
+    .core-context-title h4 { margin:2px 0 0; color:#fff; font-size:23px; font-weight:900; }
+    .core-context-reasons { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+    .core-context-reasons span { padding:9px 8px; border:1px solid #fbbf2466; border-radius:10px; background:#fffaf0; color:#78350f; font-size:14px; font-weight:900; text-align:center; }
+    .core-connector { position:relative; height:20px; display:grid; place-items:center; color:#60a5fa; font-size:20px; font-weight:900; line-height:1; }
+    .core-connector::before { content:""; position:absolute; top:0; bottom:0; width:2px; background:#3b82f6; opacity:.55; }
+    .core-connector span { position:relative; z-index:1; padding:0 7px; background:#1e293b; }
     .core-stage { display:block; color:#93c5fd; font-size:13px; font-weight:900; letter-spacing:.05em; }
-    .core-proposal { padding:20px; border:1px solid #1d4ed8; border-radius:18px; color:white; background:linear-gradient(120deg,#0f172a,#1e3a8a); box-shadow:0 16px 30px #1e3a8a25; text-align:center; }
+    .core-proposal { padding:14px 20px; border:1px solid #3b82f6; border-radius:15px; color:white; background:linear-gradient(120deg,#172554,#1e40af); box-shadow:0 12px 26px #1d4ed840; text-align:center; }
     .core-proposal h4 { margin:5px 0; color:#fff; font-size:28px; line-height:1.2; font-weight:900; word-break:keep-all; }
     .core-proposal p { margin:0; color:#cbd5e1; font-size:14px; }
-    .core-pillars { text-align:center; }
-    .core-pillars > .core-stage { color:#1d4ed8; margin-bottom:9px; }
+    .core-pillars { padding:11px 13px 13px; border:1px solid #475569; border-radius:15px; background:#0f172a; text-align:center; }
+    .core-pillars > .core-stage { color:#93c5fd; margin-bottom:8px; }
     .core-pillar-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
-    .core-pillar { display:flex; align-items:center; gap:12px; min-height:100px; padding:14px 18px; border:1px solid #bfdbfe; border-top:5px solid #3b82f6; border-radius:16px; background:#fff; box-shadow:0 8px 20px #0f172a10; text-align:left; }
+    .core-pillar { display:flex; align-items:center; gap:12px; min-height:74px; padding:11px 15px; border:1px solid #475569; border-left:5px solid #3b82f6; border-radius:12px; background:#1e293b; text-align:left; }
     .core-pillar:nth-child(2) { border-top-color:#10b981; }
     .core-pillar:nth-child(3) { border-top-color:#f59e0b; }
     .core-pillar span { display:grid; flex:0 0 34px; height:34px; place-items:center; border-radius:50%; color:#1d4ed8; background:#dbeafe; font-size:14px; font-weight:900; }
     .core-pillar:nth-child(2) span { background:#d1fae5; color:#047857; }
     .core-pillar:nth-child(3) span { background:#fef3c7; color:#b45309; }
-    .core-pillar h5 { margin:0; color:#0f172a; font-size:18px; line-height:1.25; font-weight:900; word-break:keep-all; }
-    .core-result { padding:17px 22px; border:1px solid #047857; border-radius:18px; background:linear-gradient(110deg,#065f46,#047857); box-shadow:0 12px 26px #04785730; text-align:center; }
+    .core-pillar h5 { margin:0; color:#fff; font-size:18px; line-height:1.25; font-weight:900; word-break:keep-all; }
+    .core-result { padding:13px 22px; border:1px solid #10b981; border-radius:15px; background:linear-gradient(110deg,#064e3b,#047857); box-shadow:0 12px 26px #04785730; text-align:center; }
     .core-result .core-stage { color:#a7f3d0; }
     .core-result h4 { margin:5px 0 0; color:#fff; font-size:28px; line-height:1.2; font-weight:900; word-break:keep-all; }
-    .core-qualification { margin:10px 0 0; color:#64748b; font-size:12px; text-align:center; }
+    .core-qualification { margin:7px 0 0; color:#94a3b8; font-size:12px; text-align:center; }
     .strategy-v2 { margin:14px 0 0; padding:20px; border:1px solid #475569; border-radius:18px; background:#1e293b; }
     .strategy-v2-head { display:flex; align-items:baseline; gap:12px; margin-bottom:14px; }
     .strategy-v2-head span { color:#fbbf24; font-size:13px; font-weight:900; white-space:nowrap; }
@@ -327,9 +341,10 @@
       .article-photo img { height:180px; }
       .article-takeaway p { font-size:15px; }
       .core-diagram { padding:18px 0 4px; }
-      .core-context { justify-content:flex-start; gap:7px; }
-      .core-context b { width:100%; }
-      .core-context span { font-size:12px; padding:7px 9px; }
+      .core-framework { gap:0; padding:12px; }
+      .core-context { grid-template-columns:1fr; gap:11px; padding:15px; }
+      .core-context-reasons { grid-template-columns:1fr; }
+      .core-context-reasons span { font-size:14px; padding:9px; }
       .core-connector { height:32px; }
       .core-proposal h4, .core-result h4 { font-size:23px; }
       .core-proposal p { font-size:14px; }
@@ -349,6 +364,8 @@
       .slide-core-v2 > div:first-child h3, .slide-article-v2 > div:first-child h3 { word-break:keep-all; }
       .slide-case .bg-blue-600 { flex:0 0 auto; white-space:nowrap; }
       .slide-case .bg-amber-600 { flex:0 0 52px; }
+      .slide-rules .p2-rules > div:first-child .w-full > div:first-child { display:block; }
+      .slide-rules .p2-rules > div:first-child a { display:inline-flex; margin-top:12px; white-space:nowrap; }
     }
   </style>
 </head>
@@ -404,11 +421,11 @@
     </div>
   </article>
 
-<article class="ppt-slide slide-rules p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-slate-200">
-    <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
+<article class="ppt-slide slide-rules p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+    <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
       <div>
         <span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">Chapter 01</span>
-        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">오픈채팅방 준수 원칙 및 가이드라인</h3>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-white">오픈채팅방 준수 원칙 및 가이드라인</h3>
       </div>
       <span class="text-xs font-bold text-slate-400">SLIDE 02</span>
     </div>
@@ -457,32 +474,37 @@
 
     </div>
 
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-100 pt-3 mt-4">
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-4">
       <span>프라이어팰리스 리노베이션 소유주 토론방</span>
       <span>SLIDE 02 / 15</span>
     </div>
   </article>
 
-<article class="ppt-slide slide-core-v2 p-8 md:p-12 flex flex-col justify-between bg-gradient-to-b from-white to-slate-50 border-t-4 border-slate-200">
-    <div class="border-b border-slate-200 pb-3 flex justify-between items-end">
-      <div><span class="text-xs font-bold text-blue-700 tracking-wider uppercase block mb-1">Chapter 02 · 방향 제안</span><h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">핵심 논의 주제 및 지향점</h3></div>
+<article class="ppt-slide slide-core-v2 p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
+    <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
+      <div><span class="text-xs font-bold text-blue-400 tracking-wider uppercase block mb-1">Chapter 02 · 방향 제안</span><h3 class="text-2xl md:text-3xl font-extrabold text-white">핵심 논의 주제 및 지향점</h3></div>
       <span class="text-xs font-bold text-slate-400">SLIDE 03</span>
     </div>
     <div class="core-diagram">
-      <div class="core-context"><b>왜 지금인가</b><span>공용시설 노후화</span><span>장기수선 방식의 한계</span><span>신축 단지와 상품성 격차</span></div>
-      <div class="core-connector" aria-hidden="true">↓</div>
-      <section class="core-proposal"><span class="core-stage">01 · 검토 방향</span><h4>대수선 및 프리미엄 브랜드 적용 검토</h4><p>단지 여건·공사 가능 범위·브랜드 조건을 확인해 실행 가능한 대안을 비교합니다.</p></section>
-      <div class="core-connector" aria-hidden="true">↓</div>
-      <section class="core-pillars"><div class="core-stage">02 · 개선의 세 가지 축</div><div class="core-pillar-grid">
-        <div class="core-pillar"><span>01</span><h5>프리미엄급<br>커뮤니티 확충</h5></div>
-        <div class="core-pillar"><span>02</span><h5>지하주차장·공용부<br>현대화</h5></div>
-        <div class="core-pillar"><span>03</span><h5>랜드마크 문주·<br>외관 특화</h5></div>
-      </div></section>
-      <div class="core-connector" aria-hidden="true">↓</div>
-      <section class="core-result"><span class="core-stage">03 · 지향하는 결과</span><h4>프리미엄 주거환경 및 부동산 가치 확보</h4></section>
-      <p class="core-qualification">※ 위 내용은 추진 방향 초안입니다. 공사 범위와 브랜드 적용, 비용 및 가치 효과는 검토·의결을 거쳐 판단합니다.</p>
+      <div class="core-framework">
+        <section class="core-context">
+          <div class="core-context-title"><span>00</span><div><small>가장 중요한 출발점</small><h4>왜 지금인가</h4></div></div>
+          <div class="core-context-reasons"><span>공용시설 노후화</span><span>장기수선 방식의 한계</span><span>신축 단지와 상품성 격차</span></div>
+        </section>
+        <div class="core-connector" aria-hidden="true"><span>↓</span></div>
+        <section class="core-proposal"><span class="core-stage">01 · 검토 방향</span><h4>대수선 및 프리미엄 브랜드 적용 검토</h4><p>단지 여건·공사 가능 범위·브랜드 조건을 확인해 실행 가능한 대안을 비교합니다.</p></section>
+        <div class="core-connector" aria-hidden="true"><span>↓</span></div>
+        <section class="core-pillars"><div class="core-stage">02 · 개선의 세 가지 축</div><div class="core-pillar-grid">
+          <div class="core-pillar"><span>01</span><h5>프리미엄급<br>커뮤니티 확충</h5></div>
+          <div class="core-pillar"><span>02</span><h5>지하주차장·공용부<br>현대화</h5></div>
+          <div class="core-pillar"><span>03</span><h5>랜드마크 문주·<br>외관 특화</h5></div>
+        </div></section>
+        <div class="core-connector" aria-hidden="true"><span>↓</span></div>
+        <section class="core-result"><span class="core-stage">03 · 지향하는 결과</span><h4>프리미엄 주거환경 및 부동산 가치 확보</h4></section>
+        <p class="core-qualification">※ 추진 방향 초안입니다. 공사 범위·브랜드 적용·비용·가치 효과는 검토와 의결을 거쳐 판단합니다.</p>
+      </div>
     </div>
-    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-200 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 03 / 15</span></div>
+    <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 03 / 15</span></div>
   </article>
 
 <article class="ppt-slide slide-survey p-8 md:p-12 flex flex-col justify-between bg-white border-t-4 border-blue-500">
