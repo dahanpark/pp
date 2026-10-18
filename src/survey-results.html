@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>프라이어팰리스 10월 설문조사 결과</title>
+  <style>
+    :root { color-scheme:light; --navy:#0f172a; --blue:#2157d5; --ink:#19243a; --muted:#607087; --line:#dbe4f0; --paper:#f2f6fc; --green:#078263; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#dce5f2; color:var(--ink); font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+    .screen-nav { max-width:1122px; margin:0 auto; padding:15px 18px; display:flex; align-items:center; justify-content:space-between; gap:16px; color:#dbeafe; background:var(--navy); }
+    .screen-nav b { font-size:14px; }
+    .screen-nav nav { display:flex; flex-wrap:wrap; gap:7px; }
+    .screen-nav a { padding:7px 10px; border:1px solid #617699; border-radius:999px; color:#fff; font-size:12px; text-decoration:none; }
+    main { max-width:1122px; margin:auto; }
+    .survey-page { width:100%; aspect-ratio:297/210; min-height:0; padding:31px 42px 24px; display:flex; flex-direction:column; gap:15px; background:var(--paper); border-bottom:1px solid #c4d2e5; }
+    .page-head { display:flex; justify-content:space-between; align-items:flex-end; gap:18px; min-height:74px; }
+    .eyebrow { color:var(--blue); font-size:13px; font-weight:900; letter-spacing:.06em; }
+    .page-head h1 { margin:5px 0 0; color:var(--navy); font-size:31px; line-height:1.15; letter-spacing:-.045em; }
+    .page-head p { margin:6px 0 0; color:var(--muted); font-size:12px; }
+    .page-index { flex:none; padding:8px 12px; border-radius:999px; background:#dce9ff; color:#1749b9; font-size:13px; font-weight:900; }
+    .question-grid { min-height:0; flex:1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:12px; }
+    .survey-page.last .question-grid { grid-template-rows:minmax(0,1fr); }
+    .question-card { min-width:0; min-height:0; display:flex; flex-direction:column; gap:8px; padding:15px 17px 13px; overflow:hidden; border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:17px; background:#fff; box-shadow:0 5px 16px #0b2d6610; }
+    .question-head { display:flex; gap:10px; align-items:flex-start; }
+    .question-no { flex:none; display:grid; place-items:center; width:29px; height:29px; border-radius:9px; background:#dce9ff; color:#1d4ed8; font-size:13px; font-weight:900; }
+    .question-head h2 { margin:0; color:var(--ink); font-size:17px; line-height:1.28; letter-spacing:-.035em; word-break:keep-all; }
+    .question-head .meta { margin:4px 0 0; color:#75849a; font-size:11.5px; font-weight:700; }
+    .chart { min-height:0; flex:1; display:flex; align-items:center; gap:12px; }
+    .chart-donut { justify-content:flex-start; }
+    .donut { position:relative; width:124px; height:124px; flex:none; display:grid; place-items:center; border-radius:50%; }
+    .donut::before { content:""; position:absolute; inset:23px; border-radius:50%; background:#fff; }
+    .donut-center { position:relative; text-align:center; color:var(--navy); }
+    .donut-center strong { display:block; font-size:24px; line-height:1.05; }
+    .donut-center small { display:block; margin-top:2px; color:var(--muted); font-size:10px; line-height:1.2; }
+    .legend { min-width:0; flex:1; display:grid; gap:4px; margin:0; padding:0; list-style:none; }
+    .legend li { display:grid; grid-template-columns:8px minmax(0,1fr) auto; align-items:center; gap:5px; color:#41516a; font-size:12px; line-height:1.15; }
+    .legend i { display:block; width:8px; height:8px; border-radius:50%; background:var(--swatch); }
+    .legend span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .legend b { color:var(--ink); font-size:12px; white-space:nowrap; }
+    .bar-list { align-self:stretch; width:100%; display:grid; align-content:center; gap:5px; }
+    .bar-row { display:grid; grid-template-columns:minmax(0,160px) minmax(0,1fr) 52px; align-items:center; gap:7px; font-size:12px; line-height:1.1; }
+    .bar-row .label { min-width:0; color:#40516b; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .bar-row .track { height:10px; border-radius:999px; overflow:hidden; background:#e9eff8; }
+    .bar-row .fill { height:100%; border-radius:999px; background:var(--bar,#3974e4); }
+    .bar-row strong { text-align:right; color:#1f3e83; font-size:12px; white-space:nowrap; }
+    .chart-stack { display:flex; flex-direction:column; align-items:stretch; justify-content:center; gap:10px; }
+    .stack { display:flex; width:100%; height:25px; overflow:hidden; border-radius:9px; background:#e9eff8; }
+    .stack span { height:100%; min-width:2px; background:var(--swatch); }
+    .stack-legend { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:10px; row-gap:5px; }
+    .stack-legend div { display:grid; grid-template-columns:8px minmax(0,1fr) auto; gap:5px; align-items:center; color:#475569; font-size:11.5px; }
+    .stack-legend i { width:8px; height:8px; border-radius:50%; background:var(--swatch); }
+    .stack-legend span { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .stack-legend b { color:#243750; white-space:nowrap; }
+    .chart-themes { align-items:stretch; }
+    .themes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-content:center; gap:8px; width:100%; }
+    .theme { padding:11px; border-radius:11px; background:#eff5ff; border:1px solid #d5e4ff; }
+    .theme b { display:block; color:#244a9d; font-size:13px; }
+    .theme span { display:block; margin-top:3px; color:#52647f; font-size:10.5px; line-height:1.3; }
+    .detail-note { margin:-3px 0 0; color:#748197; font-size:10px; line-height:1.25; }
+    .other-summary { margin:0; padding:6px 8px; border-left:3px solid #91a8d1; background:#f6f8fc; color:#465875; font-size:10.5px; line-height:1.3; word-break:keep-all; }
+    .other-summary strong { color:#2d4d89; }
+    .has-other { gap:5px; padding:12px 16px 11px; }
+    .has-other .bar-list { gap:3px; }
+    .has-other .bar-row { font-size:11px; line-height:1; }
+    .has-other .bar-row .track { height:8px; }
+    .has-other .bar-row strong { font-size:11px; }
+    .has-other .other-summary { padding:5px 7px; font-size:10px; line-height:1.2; }
+    .has-other .detail-note { margin:0; font-size:9px; }
+    .has-other .insight { padding:6px 8px; font-size:11.5px; line-height:1.25; }
+    .insight { margin:0; padding:8px 10px; border-radius:9px; background:#eef5ff; color:#244b9b; font-size:12.5px; line-height:1.38; word-break:keep-all; }
+    .insight strong { color:#153c8d; }
+    .page-foot { display:flex; justify-content:space-between; gap:20px; min-height:15px; color:#73839b; font-size:10px; line-height:1.35; }
+    .page-foot span:last-child { flex:none; }
+    .last .question-card { padding:19px 21px; }
+    .last .question-head h2 { font-size:19px; }
+    .last .chart { gap:18px; }
+    .last .donut { width:180px; height:180px; }
+    .last .donut::before { inset:36px; }
+    .last .donut-center strong { font-size:31px; }
+    .last .legend { gap:12px; }
+    .last .legend li, .last .legend b { font-size:13px; }
+    .last .theme { padding:12px; }
+    .last .theme b { font-size:14px; }
+    .last .theme span { font-size:11px; }
+    .last .insight { font-size:13px; padding:11px 13px; }
+    .last .detail-note { font-size:10.5px; }
+    .screen-only { display:block; }
+    details.buildings { margin-top:2px; color:#2853a4; font-size:10px; }
+    details.buildings summary { cursor:pointer; font-weight:800; }
+    details.buildings p { margin:4px 0 0; color:#52647f; line-height:1.4; }
+    @page { size:A4 landscape; margin:0; }
+    @media print {
+      html, body { width:297mm; margin:0; background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+      .screen-nav, .screen-only { display:none!important; }
+      main { max-width:none; }
+      .survey-page { width:297mm; height:210mm; aspect-ratio:auto; page-break-after:always; break-after:page; border:0; }
+      .survey-page:last-child { page-break-after:auto; break-after:auto; }
+    }
+    @media (max-width:700px) {
+      body { background:var(--paper); }
+      .screen-nav { align-items:flex-start; flex-direction:column; gap:8px; padding:10px 16px; }
+      .screen-nav nav { gap:5px; }
+      .screen-nav a { padding:5px 8px; font-size:11px; }
+      .survey-page { width:auto; min-height:0; aspect-ratio:auto; padding:24px 16px 18px; gap:16px; }
+      .page-head { min-height:0; align-items:flex-start; }
+      .page-head h1 { font-size:26px; }
+      .page-head p { font-size:12px; line-height:1.45; }
+      .page-index { padding:6px 8px; font-size:11px; }
+      .question-grid, .survey-page.last .question-grid { display:flex; flex-direction:column; gap:13px; }
+      .question-card, .last .question-card { min-height:0; padding:17px 16px; gap:13px; overflow:visible; }
+      .question-head h2, .last .question-head h2 { font-size:18px; }
+      .question-head .meta { font-size:11px; }
+      .chart { min-height:125px; }
+      .donut, .last .donut { width:116px; height:116px; }
+      .donut::before, .last .donut::before { inset:23px; }
+      .donut-center strong, .last .donut-center strong { font-size:22px; }
+      .legend, .last .legend { gap:6px; }
+      .legend li, .last .legend li, .legend b, .last .legend b { font-size:11px; }
+      .bar-list { gap:8px; padding:5px 0; }
+      .bar-row { grid-template-columns:minmax(0,125px) minmax(0,1fr) 52px; font-size:11px; }
+      .bar-row strong { font-size:11px; }
+      .bar-row .track { height:11px; }
+      .stack-legend div { font-size:11px; }
+      .theme, .last .theme { padding:10px; }
+      .theme b, .last .theme b { font-size:13px; }
+      .theme span, .last .theme span { font-size:11px; }
+      .insight, .last .insight { font-size:13px; line-height:1.5; padding:10px 11px; }
+      .detail-note, .last .detail-note { font-size:10.5px; }
+      .other-summary { font-size:11px; line-height:1.4; padding:8px 10px; }
+      .has-other .other-summary { font-size:11px; line-height:1.4; padding:8px 10px; }
+      .page-foot { font-size:10px; }
+    }
+    @media (max-width:360px) {
+      .chart-donut { gap:8px; }
+      .donut, .last .donut { width:102px; height:102px; }
+      .donut::before, .last .donut::before { inset:20px; }
+      .legend li, .last .legend li, .legend b, .last .legend b { font-size:10px; }
+      .bar-row { grid-template-columns:minmax(0,100px) minmax(0,1fr) 49px; gap:5px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-nav"><b>프라이어팰리스 · 10월 설문 결과</b><nav aria-label="설문 페이지 이동"><a href="#page-1">Q1–4</a><a href="#page-2">Q5–8</a><a href="#page-3">Q9–12</a><a href="#page-4">Q13–14</a></nav></div>
+  <main id="survey-pages"></main>
+  <script>
+    const palette = ['#2157d5','#32a5a0','#f0ab24','#b260d4','#e96865','#7390bc','#90bb71','#8894a8'];
+    const buildings = [['105동',19],['102동',16],['118동',13],['107동',12],['121동',11],['111동',11],['117동',11],['101동',10],['113동',10],['106동',9],['112동',9],['103동',8],['114동',8],['120동',8],['115동',7],['116동',7],['119동',7],['110동',6],['109동',5],['108동',5],['104동',4],['122동',3]];
+    const questions = [
+      {n:1,title:'프라이어팰리스와의 관계는?',count:199,type:'donut',headline:'93.5%',headlabel:'실거주 소유주',items:[['실거주 소유주',186],['비거주 소유주',9],['임차인 등 거주자',4]],insight:'응답 199건 중 실거주 소유주가 186건(93.5%)으로 가장 큰 비중을 차지합니다.'},
+      {n:2,title:'몇 동에 소유 또는 거주하고 계시나요?',count:199,type:'stack-buildings',items:[...buildings.slice(0,5),['그 외 17개 동',128]],allItems:buildings,insight:'22개 동 모두에서 응답이 있었으며 105동이 19건으로 가장 많았습니다.'},
+      {n:3,title:'현재 주거환경에 얼마나 만족하십니까?',count:199,type:'stack',items:[['매우 만족',14],['만족',115],['보통',59],['불만족',9],['매우 불만족',2]],insight:'만족·매우 만족 응답은 129건(64.8%)이고 불만족·매우 불만족은 11건(5.5%)입니다.'},
+      {n:4,title:'리노베이션·대수선의 필요성은?',count:199,type:'donut',headline:'83.4%',headlabel:'필요하다는 응답',items:[['매우 필요',106],['어느 정도 필요',60],['정보 확인 후 판단',33]],insight:'필요하다는 응답은 166건(83.4%)이고 33건(16.6%)은 추가 정보를 확인한 뒤 판단하겠다고 답했습니다.'},
+      {n:5,title:'우선 개선 항목은? (최대 3개)',count:199,type:'bars',multiple:true,items:[['승강기',124],['커뮤니티 시설',114],['외관·외벽·도장',112],['주차장 환경',77],['조경·외부공간',57],['노후 설비·건물 성능',46],['보안·스마트 시스템',42],['공용부 로비·복도 등',37]],other:'직접 입력 12건 · 단지명·브랜드(6), 조명·계단(2), 놀이터·문주·학교 접근·승강기·운동시설(각 1)',note:'응답자 대비 선택 비율 · 기타는 중복 주제 가능 · 선택 수 초과 입력도 원본대로 포함',insight:'승강기(62.3%), 커뮤니티(57.3%), 외관(56.3%)이 가장 많이 선택된 세 항목입니다.'},
+      {n:6,title:'소유주 부담금 발생 가능성을 알고 있었습니까?',count:198,type:'donut',headline:'94.9%',headlabel:'인지·일부 인지',items:[['알고 있었다',142],['어느 정도 알았다',46],['처음 알았다',10]],insight:'188건(94.9%)이 소유주 부담금 발생 가능성을 알고 있거나 어느 정도 알고 있었다고 답했습니다.'},
+      {n:7,title:'어느 정도의 세대 부담금까지 검토할 의향이 있습니까?',count:199,type:'bars',items:[['3천만원 이상 조건부 검토',99],['현재 판단 어려움',37],['1천만원 미만',25],['2천만~3천만원 미만',16],['1천만~2천만원 미만',14],['추가 부담 동의 어려움',8]],note:'공사 범위와 기대 효과가 충분히 설명된다는 조건의 답변',insight:'효과를 전제로 3천만원 이상도 검토할 수 있다는 응답이 99건(49.7%)으로 가장 많았습니다.'},
+      {n:8,title:'인근 유사 단지 대비 현재 가치를 어떻게 보십니까?',count:198,type:'donut',headline:'92.4%',headlabel:'낮게 평가 인식',items:[['다소 낮다',101],['상당히 낮다',82],['적정하다',13],['높다',1],['모르겠다',1]],insight:'183건(92.4%)이 인근 유사 단지 대비 현재 가치를 낮게 평가한다고 답했습니다.'},
+      {n:9,title:'단지 가치에 영향을 주는 요인은? (최대 3개)',count:199,type:'bars',multiple:true,items:[['브랜드·단지 이미지',139],['주차·조경·커뮤니티',113],['입지·교통 환경',83],['외관·공용부 수준',82],['준공연도·노후도',63],['관리·유지보수',44],['세대 내부 구조',22]],other:'직접 입력 18건 · 학군·학교 배정(8), 저평가·중개 인식(3), 단지명(2), 소유주 구성·비용(2), 주변 이미지·상가·커뮤니티(각 1)',note:'응답자 대비 선택 비율 · 기타는 중복 주제 가능 · 선택 수 초과 입력도 원본대로 포함',insight:'브랜드·단지 이미지(69.8%)와 주차·조경·커뮤니티(56.8%)가 가장 많이 선택됐습니다.'},
+      {n:10,title:'리노베이션과 함께 단지명 변경을 검토한다면?',count:199,type:'stack',items:[['건설사 브랜드 중심',138],['기존명+브랜드',35],['현재 명칭 유지',20],['새 단지명',6]],insight:'건설사 브랜드 중심 변경 또는 기존 명칭과 브랜드 결합을 고른 응답은 173건(86.9%)입니다.'},
+      {n:11,title:'시공사·브랜드 선정에서 중요한 기준은? (최대 2개)',count:198,type:'bars',multiple:true,items:[['브랜드 인지도',113],['가치 향상 가능성',92],['대수선 경험',84],['공사 품질',65],['공사비',40],['사후관리',26],['공사기간·불편 최소화',13]],note:'응답자 대비 선택 비율 · 표기 차이 통합 · 선택 수 초과 입력도 원본대로 포함',insight:'브랜드 인지도(57.1%), 가치 향상 가능성(46.5%), 대수선 경험(42.4%)이 상위 세 기준입니다.'},
+      {n:12,title:'우선 검토를 원하는 건설사·브랜드는?',count:199,type:'donut',headline:'69.3%',headlabel:'현대건설 선호',items:[['현대건설 힐스테이트',138],['삼성물산 래미안',37],['특정 선호 없음',18],['기타',4],['DL이앤씨 e편한세상',2]],insight:'현대건설 힐스테이트를 우선 검토하자는 응답이 138건(69.3%)으로 가장 많았습니다.'},
+      {n:13,title:'주거환경과 가치 향상을 위해 필요한 사항은?',count:106,type:'themes',themes:[['커뮤니티·휴식','헬스장·카페·독서실·사우나'],['단지명·브랜드·외관','브랜드 명칭·문주·외벽 도색'],['승강기·설비','승강기 교체·배관·방수'],['주차·보행 동선','지하주차장·중앙광장 차량 동선'],['조경·조명·놀이터','공원화·어두운 동선·놀이시설'],['단지 관리·보안','관리 체계·외부인 출입'],['상가·주변 접근','상가 활성화·학교·지하철 동선'],['추진 절차·비용','단계별 계획·설명회·재원']],note:'자유응답란 입력 106건의 반복 주제 요약 · 한 응답에 여러 주제 포함 가능 · 원문 미공개',insight:'자유의견에는 커뮤니티·이미지뿐 아니라 설비, 이동 동선, 조경, 관리, 주변 접근, 추진 비용까지 다양한 주제가 나타났습니다.'},
+      {n:14,title:'향후 검토 과정에 참여할 의향은?',count:199,type:'donut',headline:'99.0%',headlabel:'관심 응답',items:[['진행 자료를 받고 싶다',82],['적극 참여',59],['설문·설명회 의견 제시',56],['현재 참여 의향 없음',2]],insight:'197건(99.0%)이 자료 수신, 설문·설명회 의견 제시 또는 적극 참여 중 하나를 선택했습니다.'}
+    ];
+    const esc = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+    const percent = (value,total) => `${(value/total*100).toFixed(1)}%`;
+    function donut(question) {
+      let start=0;
+      const segments=question.items.map((item,index)=>{const end=start+item[1]/question.count*100;const part=`${palette[index]} ${start}% ${end}%`;start=end;return part;});
+      const legend=question.items.map((item,index)=>`<li style="--swatch:${palette[index]}"><i></i><span title="${esc(item[0])}">${esc(item[0])}</span><b>${percent(item[1],question.count)}</b></li>`).join('');
+      return `<div class="chart chart-donut"><div class="donut" style="background:conic-gradient(${segments.join(',')})"><div class="donut-center"><strong>${esc(question.headline)}</strong><small>${esc(question.headlabel)}</small></div></div><ul class="legend">${legend}</ul></div>`;
+    }
+    function bars(question) {
+      const rows=question.items.map((item,index)=>`<div class="bar-row"><span class="label" title="${esc(item[0])}">${esc(item[0])}</span><span class="track"><span class="fill" style="display:block;width:${(item[1]/question.count*100).toFixed(2)}%;--bar:${palette[index%palette.length]}"></span></span><strong>${percent(item[1],question.count)}</strong></div>`).join('');
+      return `<div class="chart"><div class="bar-list">${rows}</div></div>`;
+    }
+    function stack(question) {
+      const parts=question.items.map((item,index)=>`<span style="width:${(item[1]/question.count*100).toFixed(2)}%;--swatch:${palette[index]}"></span>`).join('');
+      const buildingsChart=question.type==='stack-buildings';
+      const legend=question.items.map((item,index)=>`<div style="--swatch:${palette[index]}"><i></i><span title="${esc(item[0])}">${esc(item[0])}</span><b>${buildingsChart?`${item[1]}건`:percent(item[1],question.count)}</b></div>`).join('');
+      const allBuildings=buildingsChart?`<details class="buildings screen-only"><summary>22개 동 전체 보기</summary><p>${question.allItems.map(item=>`${esc(item[0])} ${item[1]}건`).join(' · ')}</p></details>`:'';
+      return `<div class="chart chart-stack"><div class="stack" role="img" aria-label="${esc(question.items.map(item=>`${item[0]} ${item[1]}건`).join(', '))}">${parts}</div><div class="stack-legend">${legend}</div>${allBuildings}</div>`;
+    }
+    function themes(question) { return `<div class="chart chart-themes"><div class="themes">${question.themes.map(item=>`<div class="theme"><b>${esc(item[0])}</b><span>${esc(item[1])}</span></div>`).join('')}</div></div>`; }
+    function card(question) {
+      const chart=question.type==='donut'?donut(question):question.type==='stack'||question.type==='stack-buildings'?stack(question):question.type==='themes'?themes(question):bars(question);
+      const type=question.type==='themes'?'자유서술':question.multiple?'복수선택':'단일선택';
+      return `<article class="question-card ${question.other?'has-other':''}" id="q${question.n}"><div class="question-head"><span class="question-no">${String(question.n).padStart(2,'0')}</span><div><h2>${esc(question.title)}</h2><p class="meta">응답 ${question.count}건 · ${type}</p></div></div>${chart}${question.other?`<p class="other-summary"><strong>기타:</strong> ${esc(question.other)}</p>`:''}${question.note?`<p class="detail-note">${esc(question.note)}</p>`:''}<p class="insight"><strong>요약</strong> · ${esc(question.insight)}</p></article>`;
+    }
+    const pages=[questions.slice(0,4),questions.slice(4,8),questions.slice(8,12),questions.slice(12,14)];
+    document.getElementById('survey-pages').innerHTML=pages.map((items,index)=>`<section class="survey-page ${index===3?'last':''}" id="page-${index+1}"><header class="page-head"><div><span class="eyebrow">OCTOBER SURVEY · ${index+1}/4</span><h1>10월 설문조사 결과</h1><p>프라이어팰리스 주거환경 개선 및 단지 가치 향상 의견조사 · 질문 ${items[0].n}–${items.at(-1).n}</p></div><span class="page-index">${String(index+1).padStart(2,'0')} / 04</span></header><div class="question-grid">${items.map(card).join('')}</div><footer class="page-foot"><span>2026.10.18 파일 기준 · 제출 200건 · 문항별 응답 수 표시 · 자발적 응답이며 전체 주민 의결 결과가 아닙니다.</span><span>10월 설문조사 결과</span></footer></section>`).join('');
+  </script>
+</body>
+</html>
