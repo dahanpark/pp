@@ -372,6 +372,26 @@
       .slide-rules .p2-rules > div:first-child .w-full > div:first-child { display:block; }
       .slide-rules .p2-rules > div:first-child a { display:inline-flex; margin-top:12px; white-space:nowrap; }
     }
+    @media print {
+      html, body { width:297mm; margin:0 !important; padding:0 !important; print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+      .ppt-slide { width:297mm !important; height:210mm !important; min-height:210mm !important; max-height:210mm !important; margin:0 !important; padding:8mm 10mm !important; border:0 !important; border-radius:0 !important; overflow:hidden !important; box-shadow:none !important; box-sizing:border-box !important; break-inside:avoid-page; page-break-inside:avoid; break-after:page; page-break-after:always; }
+      .ppt-slide:last-of-type { break-after:auto; page-break-after:auto; }
+      .ppt-slide.cover-bg { padding:9mm 11mm !important; }
+      .cover-bg > div:first-child { min-height:0 !important; margin-bottom:0 !important; }
+      .cover-bg > div:last-child { min-height:0 !important; margin-top:0 !important; padding-top:10px !important; }
+      .slide-rules > div:first-child { min-height:0 !important; }
+      .slide-rules .p2-intro { margin:7px 0 !important; padding:8px 11px !important; }
+      .slide-rules .p2-rules { justify-content:space-between !important; gap:9px !important; }
+      .slide-rules .p2-rules > div { flex:1; min-height:0; margin-top:0 !important; padding:12px 16px !important; }
+      .slide-rules .p2-rules .w-12 { width:38px; height:38px; }
+      .slide-rules .p2-rules p { margin-top:3px; }
+      .slide-article-v2 .article-v2-body { display:flex; flex-direction:column; min-height:0; }
+      .slide-article-v2 .article-v2-grid { flex:1; min-height:0; }
+      .slide-article-v2 .article-v2-card { display:flex; flex-direction:column; }
+      .slide-article-v2 .article-v2-card img { height:210px; }
+      .slide-article-v2 .article-v2-card a { margin-top:auto; }
+      .slide-article-v2 .article-v2-insight { margin-top:13px; }
+    }
   </style>
 </head>
 <body class="py-6 px-3 md:px-6">
@@ -405,7 +425,7 @@
     <!-- 유출 금지 뱃지 -->
     <div class="w-full flex justify-center mb-8">
       <span class="px-6 py-2.5 bg-rose-600/90 text-white backdrop-blur-md rounded-full font-bold text-sm tracking-wide shadow-md border border-rose-500">
-        <i class="fa-solid fa-people-group mr-1.5"></i>주민 의견 공유 자료 · 개별 응답·인증자료 미포함
+        <i class="fa-solid fa-people-group mr-1.5"></i>프라이어팰리스 주민 의견 공유 자료로, 외부 공개를 제한합니다
       </span>
     </div>
 
@@ -518,62 +538,6 @@
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 03 / 19</span></div>
   </article>
 
-<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="survey-report-head">
-    <div class="survey-report-title"><span>OCTOBER SURVEY · 1/4</span><h3>10월 설문조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q1–4</p></div>
-    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
-  </header>
-  <div class="question-grid report-question-grid" id="report-survey-grid-1"></div>
-  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 04 / 19</span></footer>
-</article>
-
-<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="survey-report-head">
-    <div class="survey-report-title"><span>OCTOBER SURVEY · 2/4</span><h3>10월 설문조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q5–8</p></div>
-    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
-  </header>
-  <div class="question-grid report-question-grid" id="report-survey-grid-2"></div>
-  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 05 / 19</span></footer>
-</article>
-
-<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="survey-report-head">
-    <div class="survey-report-title"><span>OCTOBER SURVEY · 3/4</span><h3>10월 설문조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q9–12</p></div>
-    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
-  </header>
-  <div class="question-grid report-question-grid" id="report-survey-grid-3"></div>
-  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 06 / 19</span></footer>
-</article>
-
-<article class="ppt-slide slide-survey survey-report survey-report-last p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="survey-report-head">
-    <div class="survey-report-title"><span>OCTOBER SURVEY · 4/4</span><h3>10월 설문조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q13–14</p></div>
-    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
-  </header>
-  <div class="question-grid report-question-grid" id="report-survey-grid-4"></div>
-  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 07 / 19</span></footer>
-</article>
-
-<article class="ppt-slide slide-discussion p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="discussion-head"><div><span>2026 SEPTEMBER–OCTOBER · 주민 대화 기록 1/2</span><h3>대수선·리노베이션 주요 논의</h3><p>무엇을 바꿀 것인가</p></div><strong>SLIDE 08</strong></header>
-  <div class="discussion-grid"><section class="discussion-card"><div class="discussion-card-top"><span>01</span><h4>노후 공용시설과 안전·이용 편의</h4></div><p><b>논의된 내용</b>엘리베이터의 노후와 반복 고장, 지하주차장 및 공용부의 낡은 상태가 일상 불편과 안전 우려로 언급됐습니다.</p><p><b>제기된 개선 요구</b>엘리베이터 상태를 우선 진단하고, 시급한 교체·보수와 대수선에 포함할 공사를 구분해 중복 지출을 줄이자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>02</span><h4>외관·문주·조경을 통한 단지 이미지 개선</h4></div><p><b>논의된 내용</b>외벽 도색, 문주와 진입부, 주차장 마감, 벤치·조경 등 눈에 보이는 공간이 주변 단지와의 비교 및 단지 인식에 영향을 준다는 의견이 있었습니다.</p><p><b>제기된 개선 요구</b>부분 보수를 반복하기보다 외관과 공용부의 디자인 방향을 함께 잡아 단지 전체의 완성도를 높이자는 제안이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>03</span><h4>커뮤니티와 생활 동선</h4></div><p><b>논의된 내용</b>커뮤니티 시설의 필요성과 이용·관리 가능성에 대한 견해가 나뉘었고, 단지 주변 공원과 통학 동선의 안전·편의도 함께 거론됐습니다.</p><p><b>제기된 개선 요구</b>기존 공간 활용 가능성을 살피고, 공원·등굣길은 소관 기관과 협의할 생활환경 과제로 따로 정리하자는 의견이 있었습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>04</span><h4>보수·대수선·리모델링의 범위 구분</h4></div><p><b>논의된 내용</b>장기수선계획에 따른 보수, 공용부 중심 대수선, 이주·증축을 수반할 수 있는 리모델링을 어떻게 비교할지 의견이 달랐습니다.</p><p><b>제기된 개선 요구</b>각 방식의 공사 범위·기간·비용·절차를 같은 기준으로 비교한 뒤 우선순위를 정하자는 제안이 나왔습니다.</p></section></div>
-  <p class="discussion-note">자료: 소유주 토론방·입주민 대화방(2026.09~10). 익명 의견을 주제별로 재구성했습니다. 진단·비용·계약·일정과 공식 결정은 별도 확인이 필요합니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 08 / 19</span></footer>
-</article>
-
-<article class="ppt-slide slide-discussion p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
-  <header class="discussion-head"><div><span>2026 SEPTEMBER–OCTOBER · 주민 대화 기록 2/2</span><h3>대수선·리노베이션 주요 논의</h3><p>어떻게 검토할 것인가</p></div><strong>SLIDE 09</strong></header>
-  <div class="discussion-grid"><section class="discussion-card"><div class="discussion-card-top"><span>05</span><h4>재원과 세대별 부담의 투명성</h4></div><p><b>논의된 내용</b>장기수선충당금으로 처리할 항목과 추가 부담이 필요한 항목의 경계, 부담 가능한 금액과 시기에 대해 다양한 의견이 있었습니다.</p><p><b>제기된 개선 요구</b>범위별 개략 견적과 재원 구성을 먼저 제시하고, 분할 납부 가능성도 시공사 제안 단계에서 확인하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>06</span><h4>브랜드 적용 가능성의 사전 확인</h4></div><p><b>논의된 내용</b>시공사 브랜드 적용이 단지 이미지에 도움이 될 수 있다는 기대와, 기존 시공사 관계·사용 조건을 확인해야 한다는 신중론이 함께 제기됐습니다.</p><p><b>제기된 개선 요구</b>특정 브랜드 사용을 전제로 홍보하기보다 적용 요건, 승인 주체, 추가 비용을 관련 업체에 확인해 비교하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>07</span><h4>소유주·입주민 의견을 함께 듣는 조사</h4></div><p><b>논의된 내용</b>소유주의 비용 부담 의견뿐 아니라 실제 거주자의 시설 불편과 개선 우선순위도 수렴해야 한다는 의견이 있었습니다. 10월에 시작된 기초 의견조사는 사업 찬반을 결정하는 공식 투표로 안내되지 않았습니다.</p><p><b>제기된 개선 요구</b>응답자 구분과 조사 범위를 명시하고, 결과를 공사 범위·우선순위 검토의 기초자료로 사용하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>08</span><h4>공식 검토와 단계별 공개</h4></div><p><b>논의된 내용</b>10월에는 입주자대표회의 주도의 준비위원회 구성이 제안됐으나, 대화 기록상 10월 22일에는 토의 안건으로 설명된 상태였습니다.</p><p><b>제기된 개선 요구</b>현황 진단과 주민 의견 수렴을 거쳐 복수 시공사 설명·비교, 공식 절차와 의결 단계별로 자료와 결정 상태를 공개하자는 제안이 나왔습니다.
-
-</p></section></div>
-  <p class="discussion-note">자료: 소유주 토론방·입주민 대화방(2026.09~10). 익명 의견을 주제별로 재구성했습니다. 진단·비용·계약·일정과 공식 결정은 별도 확인이 필요합니다.</p>
-  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 09 / 19</span></footer>
-</article>
-
 <article class="ppt-slide slide-cost p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
       <div>
@@ -581,7 +545,7 @@
         <h3 class="text-2xl md:text-3xl font-extrabold text-white">정비사업 방식 비교: 왜 지금 '대수선'인가?</h3>
         <p class="text-xs text-slate-300 mt-2">아래 수치와 비용 기준은 토론용 추정치입니다. 실제 금액·범위·재원은 현장 진단과 견적으로 확인해야 합니다.</p>
       </div>
-      <span class="text-xs font-bold text-slate-500">SLIDE 10</span>
+      <span class="text-xs font-bold text-slate-500">SLIDE 04</span>
     </div>
 
     <!-- 비교표 -->
@@ -638,7 +602,7 @@
     <p class="law-source"><a href="https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1026187795" target="_blank">절차 참고: 공동주택관리법 시행규칙 제7조 (국가법령정보센터)</a></p>
     
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3 mt-3">
-      <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 10 / 19</span>
+      <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 04 / 19</span>
     </div>
   </article>
 
@@ -648,7 +612,7 @@
         <span class="text-xs font-bold text-slate-400 tracking-wider uppercase block mb-1">Background 02</span>
         <h3 class="text-2xl md:text-3xl font-extrabold text-white">전체 로드맵 및 향후 행정 추진 아젠다</h3>
       </div>
-      <span class="text-xs font-bold text-slate-500">SLIDE 11</span>
+      <span class="text-xs font-bold text-slate-500">SLIDE 05</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-5 flex-grow">
@@ -696,9 +660,63 @@
     </div>
     
     <div class="text-xs text-slate-500 flex justify-between border-t border-slate-700 pt-3">
-      <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 11 / 19</span>
+      <span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 05 / 19</span>
     </div>
   </article>
+
+<article class="ppt-slide slide-discussion p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="discussion-head"><div><span>2026 SEPTEMBER–OCTOBER · 주민 대화 기록 1/2</span><h3>리노베이션(대수선) 주요 논의 사항 (오픈채팅방)</h3><p>주민 공감과 개선 필요성</p></div><strong>SLIDE 06</strong></header>
+  <div class="discussion-grid"><section class="discussion-card"><div class="discussion-card-top"><span>01</span><h4>대수선 방향에 대한 주민 공감</h4></div><p><b>논의된 내용</b>이주 부담을 줄이면서 공용시설을 개선하는 대수선 방향에 관심과 기대가 제기됐습니다. 한편 사업 범위와 효과를 알기 전에는 판단을 유보해야 한다는 의견도 있었습니다.</p><p><b>제기된 개선 요구</b>보수·대수선·리모델링의 차이와 예상 변화, 주민 생활에 미치는 영향을 같은 기준으로 설명해 공감 여부를 확인하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>02</span><h4>대수선 필요성에 대한 공감</h4></div><p><b>논의된 내용</b>승강기·지하주차장·공용부의 노후와 인근 단지 대비 이미지·시설 격차가 개선 필요성의 근거로 거론됐습니다. 별도 의견조사에서도 유효 응답 221건 중 184건이 리노베이션·대수선이 필요하다고 답했습니다.</p><p><b>제기된 개선 요구</b>시설별 상태 진단과 불편 사례를 모아 시급한 보수와 대수선 대상의 우선순위를 객관적으로 확인하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>03</span><h4>노후 공용시설과 안전·이용 편의</h4></div><p><b>논의된 내용</b>엘리베이터의 노후와 반복 고장, 지하주차장 및 공용부의 낡은 상태가 일상 불편과 안전 우려로 언급됐습니다.</p><p><b>제기된 개선 요구</b>엘리베이터 상태를 우선 진단하고, 시급한 교체·보수와 대수선에 포함할 공사를 구분해 중복 지출을 줄이자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>04</span><h4>외관·문주·조경을 통한 단지 이미지 개선</h4></div><p><b>논의된 내용</b>외벽 도색, 문주와 진입부, 주차장 마감, 벤치·조경 등 눈에 보이는 공간이 주변 단지와의 비교 및 단지 인식에 영향을 준다는 의견이 있었습니다.</p><p><b>제기된 개선 요구</b>부분 보수를 반복하기보다 외관과 공용부의 디자인 방향을 함께 잡아 단지 전체의 완성도를 높이자는 제안이 나왔습니다.</p></section></div>
+  <p class="discussion-note">자료: 소유주 토론방·입주민 대화방(2026.09~10). 익명 의견을 주제별로 재구성했습니다. 진단·비용·계약·일정과 공식 결정은 별도 확인이 필요합니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 06 / 19</span></footer>
+</article>
+
+<article class="ppt-slide slide-discussion p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="discussion-head"><div><span>2026 SEPTEMBER–OCTOBER · 주민 대화 기록 2/2</span><h3>리노베이션(대수선) 주요 논의 사항 (오픈채팅방)</h3><p>범위와 재원·브랜드 검토</p></div><strong>SLIDE 07</strong></header>
+  <div class="discussion-grid"><section class="discussion-card"><div class="discussion-card-top"><span>05</span><h4>커뮤니티와 생활 동선</h4></div><p><b>논의된 내용</b>커뮤니티 시설의 필요성과 이용·관리 가능성에 대한 견해가 나뉘었고, 단지 주변 공원과 통학 동선의 안전·편의도 함께 거론됐습니다.</p><p><b>제기된 개선 요구</b>기존 공간 활용 가능성을 살피고, 공원·등굣길은 소관 기관과 협의할 생활환경 과제로 따로 정리하자는 의견이 있었습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>06</span><h4>보수·대수선·리모델링의 범위 구분</h4></div><p><b>논의된 내용</b>장기수선계획에 따른 보수, 공용부 중심 대수선, 이주·증축을 수반할 수 있는 리모델링을 어떻게 비교할지 의견이 달랐습니다.</p><p><b>제기된 개선 요구</b>각 방식의 공사 범위·기간·비용·절차를 같은 기준으로 비교한 뒤 우선순위를 정하자는 제안이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>07</span><h4>재원과 세대별 부담의 투명성</h4></div><p><b>논의된 내용</b>장기수선충당금으로 처리할 항목과 추가 부담이 필요한 항목의 경계, 부담 가능한 금액과 시기에 대해 다양한 의견이 있었습니다.</p><p><b>제기된 개선 요구</b>범위별 개략 견적과 재원 구성을 먼저 제시하고, 분할 납부 가능성도 시공사 제안 단계에서 확인하자는 의견이 나왔습니다.</p></section><section class="discussion-card"><div class="discussion-card-top"><span>08</span><h4>브랜드 적용 가능성의 사전 확인</h4></div><p><b>논의된 내용</b>시공사 브랜드 적용이 단지 이미지에 도움이 될 수 있다는 기대와, 기존 시공사 관계·사용 조건을 확인해야 한다는 신중론이 함께 제기됐습니다.</p><p><b>제기된 개선 요구</b>특정 브랜드 사용을 전제로 홍보하기보다 적용 요건, 승인 주체, 추가 비용을 관련 업체에 확인해 비교하자는 의견이 나왔습니다.</p></section></div>
+  <p class="discussion-note">자료: 소유주 토론방·입주민 대화방(2026.09~10). 익명 의견을 주제별로 재구성했습니다. 진단·비용·계약·일정과 공식 결정은 별도 확인이 필요합니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 07 / 19</span></footer>
+</article>
+
+<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="survey-report-head">
+    <div class="survey-report-title"><span>OCTOBER SURVEY · 1/4</span><h3>대수선 주민 의견조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q1–4</p></div>
+    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
+  </header>
+  <div class="question-grid report-question-grid" id="report-survey-grid-1"></div>
+  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 08 / 19</span></footer>
+</article>
+
+<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="survey-report-head">
+    <div class="survey-report-title"><span>OCTOBER SURVEY · 2/4</span><h3>대수선 주민 의견조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q5–8</p></div>
+    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
+  </header>
+  <div class="question-grid report-question-grid" id="report-survey-grid-2"></div>
+  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 09 / 19</span></footer>
+</article>
+
+<article class="ppt-slide slide-survey survey-report p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="survey-report-head">
+    <div class="survey-report-title"><span>OCTOBER SURVEY · 3/4</span><h3>대수선 주민 의견조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q9–12</p></div>
+    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
+  </header>
+  <div class="question-grid report-question-grid" id="report-survey-grid-3"></div>
+  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 10 / 19</span></footer>
+</article>
+
+<article class="ppt-slide slide-survey survey-report survey-report-last p-8 md:p-12 flex flex-col bg-white border-t-4 border-blue-500">
+  <header class="survey-report-head">
+    <div class="survey-report-title"><span>OCTOBER SURVEY · 4/4</span><h3>대수선 주민 의견조사 결과</h3><p>주거환경 개선 및 단지 가치 향상 의견조사 · Q13–14</p></div>
+    <aside class="survey-method" aria-label="설문조사 개요"><b>조사 개요</b><span>기간 2026.10.7~10.25 예정 · 19일간</span><span>집계 10.24 12:33까지 제출 222건</span><span>공지: 소유주 토론방 138명 · 입주민 단톡방 354명 · 포커스 광고</span><span>대상: 프라이어팰리스 소유주 및 입주민</span></aside>
+  </header>
+  <div class="question-grid report-question-grid" id="report-survey-grid-4"></div>
+  <p class="survey-report-note">문항별 유효 응답 수를 표시했습니다. 자발적 의견조사이며 전체 주민의 공식 의결 결과가 아닙니다. 공지방 인원은 응답자 수와 다릅니다.</p>
+  <footer class="report-page-foot"><span>프라이어팰리스 리노베이션 소유주 토론방</span><span>SLIDE 11 / 19</span></footer>
+</article>
 
 <article class="ppt-slide slide-case p-8 md:p-12 flex flex-col justify-between !bg-slate-900 !border-slate-800">
     <div class="border-b border-slate-700 pb-3 flex justify-between items-end">
