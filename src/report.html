@@ -270,8 +270,8 @@
     .roadmap-progress strong span { color:#047857; font-size:15px; }
     .roadmap-progress small { justify-self:end; color:#64748b; font-size:10px; }
     .roadmap-progress-track { grid-column:1/-1; height:6px; overflow:hidden; border-radius:99px; background:#dbe4f0; }
-    .roadmap-progress-track i { display:block; width:30%; height:100%; border-radius:99px; background:#10b981; }
-    .slide-roadmap .roadmap-list { min-height:0; flex:1; display:grid; grid-template-rows:repeat(10,minmax(0,1fr)); gap:3px; padding:0; border:0; }
+    .roadmap-progress-track i { display:block; width:22.222%; height:100%; border-radius:99px; background:#10b981; }
+    .slide-roadmap .roadmap-list { min-height:0; flex:1; display:grid; grid-template-rows:repeat(9,minmax(0,1fr)); gap:3px; padding:0; border:0; }
     .slide-roadmap .roadmap-step { display:flex; align-items:center; gap:7px; min-height:0; margin:0; padding:3px 7px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; }
     .slide-roadmap .roadmap-number { display:grid; place-items:center; flex:0 0 24px; width:24px; height:24px; border-radius:50%; background:#e2e8f0; color:#475569; font-size:10px; font-weight:900; }
     .roadmap-step-copy { display:grid; gap:1px; min-width:0; line-height:1.12; }
@@ -420,7 +420,7 @@
       .slide-rules .p2-rules p { margin-top:3px; }
       .slide-roadmap .roadmap-columns { gap:14px !important; margin:10px 0 !important; }
       .slide-roadmap .roadmap-panel { padding:12px 14px !important; }
-      .slide-roadmap .roadmap-list { display:grid !important; grid-template-rows:repeat(10,minmax(0,1fr)) !important; gap:3px !important; padding:0 !important; }
+      .slide-roadmap .roadmap-list { display:grid !important; grid-template-rows:repeat(9,minmax(0,1fr)) !important; gap:3px !important; padding:0 !important; }
       .slide-roadmap .roadmap-step { min-height:0 !important; margin:0 !important; padding:3px 7px !important; }
       .slide-case > div:first-child { min-height:86px !important; max-height:86px; padding-bottom:6px !important; }
       .slide-case > .grid { flex:0 0 360px !important; min-height:0 !important; margin:10px 0 !important; gap:14px !important; }
@@ -696,26 +696,25 @@
 
     <div class="roadmap-columns grid grid-cols-1 md:grid-cols-2 gap-6 my-5 flex-grow">
       
-      <!-- 토론방 제안 10단계: 공식 절차와 의결 방식은 별도 확인 -->
+      <!-- 토론방 제안 9단계: 공식 절차와 의결 방식은 별도 확인 -->
       <div class="roadmap-panel bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col">
         <h4 class="text-base font-extrabold text-slate-900 mb-5 border-b border-slate-100 pb-3">
-          <i class="fa-solid fa-bars-progress text-blue-600 mr-1"></i> 대수선 10단계 검토 순서(안)
+          <i class="fa-solid fa-bars-progress text-blue-600 mr-1"></i> 대수선 9단계 검토 순서(안)
         </h4>
-        <div class="roadmap-progress" aria-label="현재 위치: 10단계 중 3단계, 준비위원회 구성 및 추진 제안">
-          <strong>현재 위치 <span>03 / 10</span></strong><small>준비위원회 구성 제안 단계</small>
+        <div class="roadmap-progress" aria-label="현재 위치: 9단계 중 2단계, 준비위원회 구성 및 추진 제안">
+          <strong>현재 위치 <span>02 / 09</span></strong><small>준비위원회 구성 제안 단계</small>
           <div class="roadmap-progress-track"><i></i></div>
         </div>
         <div class="roadmap-list flex-grow flex flex-col" role="list">
-          <div class="roadmap-step is-start" role="listitem"><span class="roadmap-number">01</span><div class="roadmap-step-copy"><b>주민 공감대 형성</b><small>시설 불편과 개선 필요성 공유</small></div></div>
-          <div class="roadmap-step is-start" role="listitem"><span class="roadmap-number">02</span><div class="roadmap-step-copy"><b>주민 여론 확인 및 공감대 형성</b><small>설문·토론으로 우선순위와 우려 수렴</small></div></div>
-          <div class="roadmap-step is-current" role="listitem"><span class="roadmap-number">03</span><div class="roadmap-step-copy"><b>준비위원회 구성 및 추진 제안 <em>현재</em></b><small>토론방 1차 목표 · 구성·역할·운영 기준 제안</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">04</span><div class="roadmap-step-copy"><b>준비위원회 의결 및 공식 발족 (주민 투표)</b><small>투표 대상·방식과 운영 기준 확인</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">05</span><div class="roadmap-step-copy"><b>리노베이션 범위 및 구체적인 방안 설정</b><small>현황 진단·공사 범위·재원안 작성</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">06</span><div class="roadmap-step-copy"><b>시공사 제안 비교 및 입찰 여부 검토</b><small>비용·기간·브랜드 조건 비교</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">07</span><div class="roadmap-step-copy"><b>추진위원회로 확대 (주민 투표)</b><small>구성·권한과 대표성 검토</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">08</span><div class="roadmap-step-copy"><b>시공사 제안·대수선 범위 확정 및 입찰 (주민 투표)</b><small>비교안 공개 후 공식 절차 검토</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">09</span><div class="roadmap-step-copy"><b>대수선 인허가 및 시공성 검토</b><small>설계·행정 협의·시공 가능성 확인</small></div></div>
-          <div class="roadmap-step" role="listitem"><span class="roadmap-number">10</span><div class="roadmap-step-copy"><b>대수선 착공</b><small>승인·계약·안전계획 확인 후 시작</small></div></div>
+          <div class="roadmap-step is-start" role="listitem"><span class="roadmap-number">01</span><div class="roadmap-step-copy"><b>주민 여론 확인 및 공감대 형성</b><small>설문·토론으로 우선순위와 우려 수렴</small></div></div>
+          <div class="roadmap-step is-current" role="listitem"><span class="roadmap-number">02</span><div class="roadmap-step-copy"><b>준비위원회 구성 및 추진 제안 <em>현재</em></b><small>토론방 1차 목표 · 구성·역할·운영 기준 제안</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">03</span><div class="roadmap-step-copy"><b>준비위원회 의결 및 공식 발족 (주민 투표)</b><small>투표 대상·방식과 운영 기준 확인</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">04</span><div class="roadmap-step-copy"><b>리노베이션 범위 및 구체적인 방안 설정</b><small>현황 진단·공사 범위·재원안 작성</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">05</span><div class="roadmap-step-copy"><b>시공사 제안 비교 및 입찰 여부 검토</b><small>비용·기간·브랜드 조건 비교</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">06</span><div class="roadmap-step-copy"><b>추진위원회로 확대 (주민 투표)</b><small>구성·권한과 대표성 검토</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">07</span><div class="roadmap-step-copy"><b>시공사 제안·대수선 범위 확정 및 입찰 (주민 투표)</b><small>비교안 공개 후 공식 절차 검토</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">08</span><div class="roadmap-step-copy"><b>대수선 인허가 및 시공성 검토</b><small>설계·행정 협의·시공 가능성 확인</small></div></div>
+          <div class="roadmap-step" role="listitem"><span class="roadmap-number">09</span><div class="roadmap-step-copy"><b>대수선 착공</b><small>승인·계약·안전계획 확인 후 시작</small></div></div>
         </div>
         <p class="roadmap-qualification">※ 주민 투표는 제안된 절차입니다. 실제 의결·동의 주체와 요건은 법령·관리규약 확인이 필요합니다.</p>
       </div>
