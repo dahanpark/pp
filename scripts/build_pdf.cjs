@@ -27,7 +27,7 @@ function cssFor(cls){let p=[];const add=(prop,val)=>p.push(`${prop}:${val}`);let
  return p.length?`[class~="${cls.replace(/"/g,'\\"')}"]{${p.join(';')}}`:'';
 }
 async function buildPdf(){
- const repoRoot=path.resolve(__dirname,'..');const sourcePath=path.join(repoRoot,'src','report.html');const releasePath=path.join(repoRoot,'releases','2026-10','261009_프라이어팰리스 리노베이션 공감리포트_26년 10월_Rev15.pdf');
+ const repoRoot=path.resolve(__dirname,'..');const sourcePath=path.join(repoRoot,'src','report.html');const releaseDir=path.join(repoRoot,'releases','2026-11');const releasePath=path.join(releaseDir,'261024_프라이어팰리스 리노베이션 공감리포트_26년 11월_Rev01.pdf');fs.mkdirSync(releaseDir,{recursive:true});
  const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});const page=await browser.newPage({viewport:{width:1200,height:850}});
  await page.goto('file:///'+sourcePath.replace(/\\/g,'/'),{waitUntil:'domcontentloaded'});await page.waitForTimeout(500);
  const source=fs.readFileSync(sourcePath,'utf8');const tokens=new Set([...source.matchAll(/class="([^"]+)"/g)].flatMap(m=>m[1].split(/\s+/)));const css=[...tokens].map(cssFor).join('\n');
