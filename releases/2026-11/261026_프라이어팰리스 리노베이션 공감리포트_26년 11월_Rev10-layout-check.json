@@ -1,0 +1,694 @@
+{
+  "basis": "User-approved Rev08 desktop HTML at 1060 CSS px width",
+  "media": "screen",
+  "externalRequests": [],
+  "pages": [
+    {
+      "page": 1,
+      "widthCssPx": 1060,
+      "heightCssPx": 596,
+      "elements": 12,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 2,
+      "widthCssPx": 1060,
+      "heightCssPx": 744.75,
+      "elements": 36,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 3,
+      "widthCssPx": 1060,
+      "heightCssPx": 841.875,
+      "elements": 61,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 4,
+      "widthCssPx": 1060,
+      "heightCssPx": 768.875,
+      "elements": 58,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 5,
+      "widthCssPx": 1060,
+      "heightCssPx": 685.734375,
+      "elements": 80,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 6,
+      "widthCssPx": 1060,
+      "heightCssPx": 760.125,
+      "elements": 43,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 7,
+      "widthCssPx": 1060,
+      "heightCssPx": 718.6875,
+      "elements": 43,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 8,
+      "widthCssPx": 1060,
+      "heightCssPx": 791.5625,
+      "elements": 230,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 9,
+      "widthCssPx": 1060,
+      "heightCssPx": 764.53125,
+      "elements": 170,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 10,
+      "widthCssPx": 1060,
+      "heightCssPx": 767.8125,
+      "elements": 179,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 11,
+      "widthCssPx": 1060,
+      "heightCssPx": 723.890625,
+      "elements": 97,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 12,
+      "widthCssPx": 1060,
+      "heightCssPx": 918.1875,
+      "elements": 64,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 13,
+      "widthCssPx": 1060,
+      "heightCssPx": 706.46875,
+      "elements": 35,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 14,
+      "widthCssPx": 1060,
+      "heightCssPx": 706.25,
+      "elements": 46,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 15,
+      "widthCssPx": 1060,
+      "heightCssPx": 923.296875,
+      "elements": 39,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 16,
+      "widthCssPx": 1060,
+      "heightCssPx": 850.4375,
+      "elements": 22,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 17,
+      "widthCssPx": 1060,
+      "heightCssPx": 856.84375,
+      "elements": 22,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 18,
+      "widthCssPx": 1060,
+      "heightCssPx": 870.96875,
+      "elements": 22,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 19,
+      "widthCssPx": 1060,
+      "heightCssPx": 968.171875,
+      "elements": 13,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    },
+    {
+      "page": 20,
+      "widthCssPx": 1060,
+      "heightCssPx": 596,
+      "elements": 9,
+      "maxGeometryDeltaPx": 0,
+      "fontChanges": 0
+    }
+  ],
+  "fonts": [
+    "Font Awesome 6 Free",
+    "Noto Sans KR"
+  ],
+  "pdf": {
+    "pages": 20,
+    "method": "Lossless screen capture, 288 dpi, original CSS pixel size",
+    "originalTextSizesRetained": true,
+    "textSelectability": false,
+    "a4UniformScales": [
+      1.058980834942802,
+      1.058980834942802,
+      0.9426375147287113,
+      1.0321206598199932,
+      1.058980834942802,
+      1.0429708113029894,
+      1.058980834942802,
+      1.0021474588403723,
+      1.0375173691523853,
+      1.033464566929134,
+      1.058980834942802,
+      0.8636570047895266,
+      1.058980834942802,
+      1.058980834942802,
+      0.8589835361488906,
+      0.9326683753249998,
+      0.9261386084032379,
+      0.9112523391522099,
+      0.8190926598571464,
+      1.058980834942802
+    ],
+    "a4Reflow": false
+  },
+  "approvedRev08Comparison": [
+    {
+      "page": 1,
+      "heightBefore": 596,
+      "heightAfter": 596,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 2,
+      "heightBefore": 744.75,
+      "heightAfter": 744.75,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 3,
+      "heightBefore": 841.875,
+      "heightAfter": 841.875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 4,
+      "heightBefore": 768.875,
+      "heightAfter": 768.875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 5,
+      "heightBefore": 685.734375,
+      "heightAfter": 685.734375,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 6,
+      "heightBefore": 760.125,
+      "heightAfter": 760.125,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 7,
+      "heightBefore": 718.6875,
+      "heightAfter": 718.6875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 8,
+      "heightBefore": 791.5625,
+      "heightAfter": 791.5625,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 9,
+      "heightBefore": 764.53125,
+      "heightAfter": 764.53125,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 10,
+      "heightBefore": 767.8125,
+      "heightAfter": 767.8125,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 11,
+      "heightBefore": 723.890625,
+      "heightAfter": 723.890625,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 12,
+      "heightBefore": 918.1875,
+      "heightAfter": 918.1875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 13,
+      "heightBefore": 706.46875,
+      "heightAfter": 706.46875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 14,
+      "heightBefore": 706.25,
+      "heightAfter": 706.25,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 15,
+      "heightBefore": 923.296875,
+      "heightAfter": 923.296875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 16,
+      "heightBefore": 850.4375,
+      "heightAfter": 850.4375,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 17,
+      "heightBefore": 856.84375,
+      "heightAfter": 856.84375,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 18,
+      "heightBefore": 870.96875,
+      "heightAfter": 870.96875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 19,
+      "heightBefore": 968.171875,
+      "heightAfter": 968.171875,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    },
+    {
+      "page": 20,
+      "heightBefore": 596,
+      "heightAfter": 596,
+      "maxGeometryDelta": 0,
+      "fontChanges": 0,
+      "colorChanges": 0,
+      "textSame": true
+    }
+  ],
+  "renderedPdfComparison": [
+    {
+      "page": 1,
+      "capturePixels": [
+        3180,
+        1788
+      ],
+      "embeddedImagePixels": [
+        3180,
+        1788
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-01.png"
+    },
+    {
+      "page": 2,
+      "capturePixels": [
+        3180,
+        2235
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2235
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-02.png"
+    },
+    {
+      "page": 3,
+      "capturePixels": [
+        3180,
+        2526
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2526
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-03.png"
+    },
+    {
+      "page": 4,
+      "capturePixels": [
+        3180,
+        2307
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2307
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-04.png"
+    },
+    {
+      "page": 5,
+      "capturePixels": [
+        3180,
+        2058
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2058
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-05.png"
+    },
+    {
+      "page": 6,
+      "capturePixels": [
+        3180,
+        2283
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2283
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-06.png"
+    },
+    {
+      "page": 7,
+      "capturePixels": [
+        3180,
+        2157
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2157
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-07.png"
+    },
+    {
+      "page": 8,
+      "capturePixels": [
+        3180,
+        2376
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2376
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-08.png"
+    },
+    {
+      "page": 9,
+      "capturePixels": [
+        3180,
+        2295
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2295
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-09.png"
+    },
+    {
+      "page": 10,
+      "capturePixels": [
+        3180,
+        2304
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2304
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-10.png"
+    },
+    {
+      "page": 11,
+      "capturePixels": [
+        3180,
+        2172
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2172
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-11.png"
+    },
+    {
+      "page": 12,
+      "capturePixels": [
+        3180,
+        2757
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2757
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-12.png"
+    },
+    {
+      "page": 13,
+      "capturePixels": [
+        3180,
+        2121
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2121
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-13.png"
+    },
+    {
+      "page": 14,
+      "capturePixels": [
+        3180,
+        2121
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2121
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-14.png"
+    },
+    {
+      "page": 15,
+      "capturePixels": [
+        3180,
+        2772
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2772
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-15.png"
+    },
+    {
+      "page": 16,
+      "capturePixels": [
+        3180,
+        2553
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2553
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-16.png"
+    },
+    {
+      "page": 17,
+      "capturePixels": [
+        3180,
+        2571
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2571
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-17.png"
+    },
+    {
+      "page": 18,
+      "capturePixels": [
+        3180,
+        2613
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2613
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-18.png"
+    },
+    {
+      "page": 19,
+      "capturePixels": [
+        3180,
+        2907
+      ],
+      "embeddedImagePixels": [
+        3180,
+        2907
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-19.png"
+    },
+    {
+      "page": 20,
+      "capturePixels": [
+        3180,
+        1788
+      ],
+      "embeddedImagePixels": [
+        3180,
+        1788
+      ],
+      "embeddedPixelsIdentical": true,
+      "pageDimensionDeltaPt": 0.0,
+      "captureDpi": 288,
+      "pdfRasterSaved": "final-20.png"
+    }
+  ],
+  "verificationSummary": {
+    "pages": 20,
+    "approvedRev08TextAndGeometryMatch": true,
+    "maxExportGeometryDeltaPx": 0,
+    "fontChangesDuringExport": 0,
+    "all20EmbeddedImagesPixelIdentical": true,
+    "screenPdfHasVariablePageHeights": true,
+    "textSelectability": false,
+    "captureDpi": 288
+  }
+}

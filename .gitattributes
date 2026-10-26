@@ -1,0 +1,9 @@
+# Preserve PDF byte offsets and font/image payloads across Windows checkouts.
+*.pdf binary
+*.woff2 binary
+*.woff binary
+*.ttf binary
+*.otf binary
+*.png binary
+*.jpeg binary
+*.jpg binary
