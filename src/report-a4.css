@@ -1,0 +1,196 @@
+/* A single A4 composition shared by desktop reading and browser printing. */
+@page { size:297mm 210mm; margin:0; }
+@media print, screen and (min-width:768px) {
+  .ppt-slide {
+    width:297mm !important; max-width:297mm !important;
+    height:210mm !important; min-height:210mm !important; max-height:210mm !important;
+    box-sizing:border-box !important; padding:28px 34px !important;
+    border:0 !important; border-radius:0 !important; overflow:hidden;
+    break-inside:avoid-page; page-break-inside:avoid; break-after:page; page-break-after:always;
+    gap:0;
+  }
+  .ppt-slide:last-of-type { break-after:auto; page-break-after:auto; }
+  .a4-page-head { flex:none; min-height:0; margin:0 0 10px !important; padding:0 0 10px !important; }
+  .a4-page-head h3 { margin:0 !important; font-size:30px !important; line-height:1.2 !important; }
+  .a4-page-head > div > span:first-child { font-size:11px !important; line-height:1.35 !important; margin-bottom:3px !important; }
+  .a4-page-head > span,.a4-page-head > strong { font-size:11px !important; white-space:nowrap; }
+  .a4-page-head p { font-size:11px; line-height:1.35; margin-top:5px !important; }
+  .a4-page-foot { flex:none; margin-top:8px !important; padding-top:8px !important; font-size:10px !important; line-height:1.25 !important; }
+  .a4-page-foot > span { white-space:nowrap; }
+  .ppt-slide.cover-bg { padding:35px 42px !important; }
+  .cover-bg:not(.slide-thanks) h2 { font-size:48px !important; line-height:1.2 !important; }
+  .cover-bg:not(.slide-thanks) > div:first-child { margin-bottom:0 !important; }
+  .cover-bg:not(.slide-thanks) > div:nth-child(2) { margin:auto 0 !important; padding:18px 0 !important; }
+  .cover-bg:not(.slide-thanks) > div:last-child { margin-top:0 !important; }
+  .slide-rules .p2-intro { margin:0 0 10px !important; padding:10px 13px !important; }
+  .slide-rules .p2-rules { min-height:0; flex:1; gap:10px !important; }
+  .slide-rules .p2-rules > div { min-height:0; flex:1; margin:0 !important; padding:16px 18px !important; }
+  .slide-rules .p2-rules .w-12 { width:38px; height:38px; }
+  .slide-rules .p2-rules h4 { font-size:19px; line-height:1.35; }
+  .slide-rules .p2-rules p { font-size:14px; line-height:1.5; }
+  .core-diagram { min-height:0; padding:0; }
+  .core-framework { padding:10px 12px; }
+  .core-context { gap:7px; padding:8px 12px; }
+  .core-context-reasons div { padding:7px 8px; }
+  .core-connector { height:15px; flex:none; }
+  .core-proposal { padding:10px 16px; }
+  .core-proposal h4,.core-result h4 { font-size:28px; }
+  .core-pillars { padding:8px 10px; }
+  .core-pillars > .core-stage { margin-bottom:5px; }
+  .core-pillar { min-height:66px; padding:8px 12px; }
+  .core-result { padding:9px 16px; }
+  .core-qualification { margin-top:4px; font-size:11px; line-height:1.35; }
+  .slide-cost > .overflow-x-auto { flex:1; min-height:0; margin:2px 0 12px !important; }
+  .slide-cost table { height:100%; }
+  .slide-cost table th,.slide-cost table td { padding:9px 11px !important; font-size:14px; line-height:1.35; }
+  .slide-cost .cost-summary { flex:none; padding:12px 16px; gap:16px; margin:0; }
+  .cost-hero strong { font-size:26px; }
+  .cost-list li { padding:6px 0; font-size:12px; line-height:1.35; }
+  .law-source { margin-top:6px; font-size:11px; }
+  .slide-roadmap .roadmap-columns { min-height:0; flex:1; margin:0 !important; gap:14px; }
+  .slide-roadmap .roadmap-columns > div { min-height:0; padding:15px 17px !important; }
+  .slide-roadmap .roadmap-panel h4 { font-size:17px; }
+  .slide-roadmap .roadmap-columns > div > h4 { margin-bottom:10px !important; padding-bottom:8px !important; }
+  .slide-roadmap .roadmap-step { padding:5px 8px; }
+  .slide-roadmap .roadmap-step-copy b { font-size:12.5px; line-height:1.25; }
+  .slide-roadmap .roadmap-step-copy small { font-size:10px; line-height:1.25; }
+  .slide-roadmap .roadmap-qualification { font-size:10px; line-height:1.3; }
+  .slide-roadmap .space-y-4 { justify-content:center; gap:10px; }
+  .slide-roadmap .space-y-4 > div { margin:0 !important; }
+  .slide-roadmap .space-y-4 > div p { font-size:13px; line-height:1.45; }
+  .slide-discussion .discussion-head { margin-bottom:12px; }
+  .slide-discussion .discussion-grid { gap:12px; }
+  .slide-discussion .discussion-card { min-height:0; padding:18px 20px; }
+  .slide-discussion .discussion-card h4 { font-size:18px; line-height:1.3; }
+  .slide-discussion .discussion-card p { font-size:14px; line-height:1.5; margin-bottom:10px; }
+  .slide-discussion .discussion-note { font-size:10px; line-height:1.3; }
+  .slide-survey .survey-report-head { min-height:0; padding-bottom:10px; margin-bottom:10px !important; }
+  .slide-survey .survey-report-title h3 { font-size:27px !important; }
+  .slide-survey .survey-method { flex-basis:335px; }
+  .slide-survey .question-grid { gap:10px; min-height:0; }
+  .slide-survey .question-head h2 { font-size:17px !important; }
+  .slide-survey .question-card { padding:10px 12px; gap:6px; }
+  .slide-survey .has-other { padding:8px 10px; gap:4px; }
+  .slide-survey .bar-row { grid-template-columns:minmax(0,165px) minmax(0,1fr) 50px; }
+  .slide-survey .bar-row .label { white-space:normal; text-overflow:clip; overflow:visible; }
+  .slide-survey .legend span { white-space:normal; text-overflow:clip; overflow:visible; }
+  .slide-survey .insight { font-size:13px; line-height:1.35; padding:7px 9px; }
+  .slide-survey.survey-report-last .question-card { padding:15px; }
+  .slide-survey.survey-report-last .insight { font-size:15px; }
+  .slide-survey.survey-report-last .theme { padding:11px; }
+  .slide-survey.survey-report-last .theme span { font-size:11px; line-height:1.35; }
+  .slide-case > .grid { min-height:0; flex:1; gap:14px !important; margin:0 0 12px !important; }
+  .slide-case > .grid > div { min-height:0; padding:17px 19px !important; }
+  .slide-case > .grid h4 { font-size:22px; margin-bottom:3px !important; }
+  .slide-case > .grid p { line-height:1.4; }
+  .slide-case > .grid .space-y-3 { flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:9px; }
+  .slide-case > .grid .space-y-3 > div { padding:10px 12px !important; margin:0 !important; }
+  .slide-case .strategy-v2 { flex:none; margin:0 !important; padding:13px 15px; }
+  .slide-case .strategy-v2-head { margin-bottom:9px; }
+  .slide-case .strategy-v2-head h4 { font-size:19px; }
+  .slide-case .strategy-v2-card { min-height:105px; padding:11px; }
+  .slide-case .strategy-v2-card b { font-size:17px; margin:4px 0; }
+  .slide-case .strategy-v2-card p { font-size:12px; line-height:1.4; }
+  .slide-case .strategy-v2 > p { font-size:11px; margin-top:7px; }
+  .slide-article-v2 .article-v2-body { display:flex; flex-direction:column; min-height:0; padding:0; }
+  .slide-article-v2 .article-v2-grid { min-height:0; flex:1; margin-top:10px; }
+  .slide-article-v2 .article-v2-card { display:flex; flex-direction:column; min-height:0; }
+  .slide-article-v2 .article-v2-card img { height:170px; }
+  .slide-article-v2 .article-v2-card a { margin-top:auto; }
+  .slide-master > .overflow-x-auto { flex:1; min-height:0; margin:4px 0 8px !important; }
+  .slide-master table { height:100%; }
+  .slide-master th,.slide-master td { padding:9px 12px !important; font-size:13px; line-height:1.45; }
+  .slide-law .law-lede { font-size:14px; line-height:1.4; margin:0 0 12px; }
+  .slide-law .law-grid { min-height:0; flex:1; gap:12px; grid-template-rows:repeat(2,minmax(0,1fr)); }
+  .slide-law .law-card { min-height:0; padding:15px 17px; }
+  .slide-law .law-card h4 { margin:5px 0 7px; font-size:19px; }
+  .slide-law .law-card p { font-size:14px; line-height:1.45; }
+  .slide-law .law-check { margin-top:9px; padding:9px 11px; font-size:12px; line-height:1.4; }
+  .slide-law .law-card a { padding-top:8px; font-size:12px; }
+  .slide-law .law-note { font-size:11px; line-height:1.35; margin-top:10px; }
+  .slide-appendix .appendix-grid { min-height:0; grid-template-rows:repeat(2,minmax(0,1fr)); }
+  .slide-appendix .appendix-single { grid-template-rows:minmax(0,1fr); }
+  .slide-appendix .appendix-figure img { flex:1; height:0; min-height:0; object-fit:contain; }
+  .slide-appendix .appendix-note { font-size:11px; line-height:1.35; }
+  .premium-card:hover { transform:none; }
+}
+@media print {
+  html,body { width:297mm !important; margin:0 !important; padding:0 !important; background:#fff; }
+  .no-print { display:none !important; }
+  .ppt-slide { margin:0 !important; box-shadow:none !important; zoom:1 !important; }
+  * { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}
+@media screen and (min-width:768px) {
+  body { padding:20px 0 30px !important; }
+  .ppt-slide { margin:0 auto 24px; zoom:var(--a4-preview-scale,1); }
+}
+.slide-rationale,.slide-timeline { background:#fff; color:#19243a; }
+.rationale-lead { margin:0 0 14px; padding:13px 16px; border-left:4px solid #2563eb; border-radius:10px; background:#eff6ff; font-size:17px; font-weight:750; line-height:1.5; word-break:keep-all; text-wrap:balance; }
+.rationale-grid { min-height:0; flex:1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:12px; }
+.rationale-card { min-height:0; padding:17px 19px; border:1px solid #dbe4f0; border-top:4px solid #2563eb; border-radius:13px; background:#f8faff; }
+.rationale-card:nth-child(2) { border-top-color:#059669; }
+.rationale-card:nth-child(3) { border-top-color:#d97706; }
+.rationale-card:nth-child(4) { border-top-color:#7c3aed; }
+.rationale-card h4 { margin:0 0 10px; color:#0f172a; font-size:18px; font-weight:850; line-height:1.35; }
+.rationale-card p { margin:0; color:#42516a; font-size:15px; line-height:1.55; word-break:keep-all; }
+.rationale-card small { display:block; margin-top:8px; color:#64748b; font-size:11px; line-height:1.4; }
+.rationale-conclusion { flex:none; margin:12px 0 0; padding:12px 16px; border-radius:11px; background:#142745; color:#fff; font-size:16px; font-weight:750; line-height:1.5; word-break:keep-all; }
+.rationale-sources { margin:8px 0 0; color:#64748b; font-size:10px; line-height:1.4; }
+.rationale-sources a { color:#2563eb; text-decoration:underline; }
+.keyword-rationale .rationale-grid { display:flex; flex-direction:column; gap:9px; }
+.keyword-rationale .rationale-card { flex:1; display:grid; grid-template-columns:235px minmax(0,1fr); align-items:center; gap:18px; padding:9px 14px; border:1px solid #dbe4f0; border-left:4px solid #2563eb; border-radius:10px; }
+.keyword-rationale .rationale-card:nth-child(2) { border-left-color:#059669; }
+.keyword-rationale .rationale-card:nth-child(3) { border-left-color:#d97706; }
+.keyword-rationale .rationale-card:nth-child(4) { border-left-color:#7c3aed; }
+.keyword-rationale .rationale-card:nth-child(5) { border-left-color:#0284c7; }
+.keyword-heading { display:flex; align-items:center; gap:10px; }
+.keyword-heading > span { flex:none; display:grid; place-items:center; width:28px; height:28px; border-radius:8px; background:#dbeafe; color:#1d4ed8; font-size:12px; font-weight:900; }
+.keyword-rationale .keyword-heading h4 { margin:0; font-size:18px; line-height:1.35; word-break:keep-all; }
+.keyword-rationale .keyword-copy p { margin:0; font-size:15px; line-height:1.45; }
+.keyword-rationale .keyword-copy small { margin-top:3px; font-size:10px; line-height:1.3; }
+.timeline-status { flex:none; display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:14px; padding:13px 16px; border:1px solid #bfdbfe; border-radius:12px; background:#eff6ff; }
+.timeline-status b { color:#1e40af; font-size:18px; line-height:1.4; }
+.timeline-status span { flex:none; color:#1e40af; font-size:12px; font-weight:800; }
+.timeline-layout { flex:1; min-height:0; display:grid; grid-template-columns:minmax(0,1.9fr) minmax(0,1fr); gap:16px; }
+.timeline-list { display:flex; flex-direction:column; gap:12px; min-height:0; }
+.timeline-event { display:grid; grid-template-columns:108px minmax(0,1fr); gap:14px; min-height:0; flex:1; padding:15px 17px; border:1px solid #dbe4f0; border-radius:13px; background:#fff; }
+.timeline-date { color:#1d4ed8; font-size:17px; font-weight:900; line-height:1.4; }
+.timeline-date small { display:block; margin-top:6px; color:#64748b; font-size:11px; font-weight:700; }
+.timeline-event h4 { color:#142745; font-size:18px; line-height:1.35; margin:0 0 6px; font-weight:850; }
+.timeline-event p,.timeline-event li { color:#42516a; font-size:14px; line-height:1.5; word-break:keep-all; }
+.timeline-event p { margin:0; }
+.timeline-event ul { list-style:disc; margin:5px 0 0; padding-left:17px; }
+.timeline-aside { display:flex; flex-direction:column; gap:12px; min-height:0; }
+.timeline-box { flex:1; padding:17px; border-radius:13px; background:#f1f5f9; border:1px solid #dbe4f0; }
+.timeline-box h4 { color:#142745; font-size:18px; margin:0 0 10px; font-weight:850; }
+.timeline-box p,.timeline-box li { color:#42516a; font-size:14px; line-height:1.6; word-break:keep-all; }
+.timeline-box p { margin:0; }
+.timeline-box ul { margin:0; padding-left:17px; list-style:disc; }
+.timeline-box.is-pending { background:#fffbeb; border-color:#fde68a; }
+.timeline-source { margin:9px 0 0; color:#64748b; font-size:10px; line-height:1.4; }
+.report-page-foot { display:flex; justify-content:space-between; border-top:1px solid #e2e8f0; }
+.cover-bg .a4-page-foot { font-size:14px !important; }
+.roadmap-step-heading { display:flex; align-items:flex-start; gap:8px; }
+.roadmap-step-heading > b { flex:1; }
+.roadmap-date-badge { flex:none; margin-left:auto; padding:2px 5px; color:#1e40af; background:#dbeafe; border-radius:4px; font-size:9.5px; font-weight:800; line-height:1.3; white-space:nowrap; }
+.roadmap-step.is-done { background:#f8fafc; border-color:#cbd5e1; }
+.roadmap-step.is-current .roadmap-date-badge { color:#065f46; background:#d1fae5; }
+@media screen and (max-width:767px) {
+  .slide-rationale,.slide-timeline { min-height:0; height:auto; }
+  .rationale-grid,.timeline-layout { display:flex; flex-direction:column; }
+  .rationale-card { padding:18px; }
+  .slide-rationale .a4-page-head h3 { word-break:keep-all; text-wrap:balance; }
+  .keyword-rationale .rationale-card { display:block; padding:16px; }
+  .keyword-heading { margin-bottom:10px; }
+  .keyword-rationale .keyword-copy p { font-size:15px; line-height:1.6; }
+  .rationale-lead,.rationale-conclusion { font-size:16px; }
+  .timeline-status { display:block; }
+  .timeline-status span { display:block; margin-top:7px; }
+  .timeline-event { grid-template-columns:1fr; }
+  .timeline-date small { display:inline; margin-left:8px; }
+  .timeline-source,.rationale-sources { font-size:11px; line-height:1.5; }
+  .slide-cost td[data-label]::before { content:attr(data-label); display:block; margin-bottom:5px; font-size:13px; font-weight:800; color:#1e40af; text-align:left; }
+  .roadmap-step-heading { flex-direction:column; gap:5px; }
+  .roadmap-step-heading > b { flex:none; }
+  .roadmap-date-badge { margin-left:0; max-width:100%; padding:3px 6px; font-size:11px; white-space:normal; }
+}

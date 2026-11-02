@@ -1,0 +1,61 @@
+{
+  "title": "대수선을 우선 검토하는 이유",
+  "lead": "대수선을 우선 살피고, 증축·재건축은 비용·이주·인허가를 비교하자는 제안입니다.",
+  "cards": [
+    {
+      "title": "01. 대수선 검토 연한 충족",
+      "body": "2007년 준공 전제에서 대수선형 리모델링 조합 설립인가의 10년 기준과 증축형의 기본 15년 기준은 충족합니다. 재건축의 통상 30년 기준은 아직 남아 대수선을 우선 검토합니다."
+    },
+    {
+      "title": "02. 용적률 277%, 증축 여력",
+      "body": "용적률 277%를 감안해 증축 여력과 추가 부담을 따져야 합니다. 시공사 제안과 관할청 협의로 법적 허용 범위, 공공기여 조건과 추가 개선 가능성을 확인합니다."
+    },
+    {
+      "title": "03. 이주 부담 비교",
+      "body": "주거동 전체를 증축·보강하는 사업은 이주를 전제로 검토합니다. 공용부 중심 개선안과 이주비·임시 거주 부담을 비교하고, 실제 이주 범위는 공법과 공사 범위에 따라 확인합니다."
+    },
+    {
+      "title": "04. 장기수선계획 연계",
+      "body": "장기수선계획에 맞는 공종과 사용 절차를 확인한 뒤 충당금 활용을 살핍니다. 예정된 보수·교체와 개선공사를 조율해 중복 지출을 줄이고, 항목별 재원과 신규 부담을 계산합니다."
+    },
+    {
+      "title": "05. 공사비와 상품 비교",
+      "body": "주거용 건물 공사비지수는 2020년 대비 2025년 말 30.76% 올랐습니다. 현대건설 ‘더 뉴 하우스’와 삼성물산 ‘넥스트 리모델링’의 공사 범위·이주 방식·견적·단지 적용 조건을 비교합니다."
+    }
+  ],
+  "conclusion": "우선 건축물대장·진단·인허가·견적·재원을 확인해 대수선 범위를 정하고, 향후 규제나 사업성이 바뀌면 재건축과 증축형을 다시 검토합니다.",
+  "sources": [
+    {
+      "label": "주택법 시행령 20조",
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0020&lsiSeq=289499&urlMode=lsScJoRltInfoR"
+    },
+    {
+      "label": "주택법 2조",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1032149015"
+    },
+    {
+      "label": "서울 도시정비조례",
+      "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2130189"
+    },
+    {
+      "label": "공동주택관리법",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284009"
+    },
+    {
+      "label": "한국건설기술연구원",
+      "url": "https://www.kict.re.kr/board.es?act=view&bid=pressrls&list_no=17654&mid=a10501050000"
+    },
+    {
+      "label": "현대건설 더 뉴 하우스",
+      "url": "https://newsroom.hdec.kr/kr/newsroom/news_view.aspx?NewsListType=news_clist&NewsSeq=1384&NewsType=latest"
+    },
+    {
+      "label": "삼성물산 넥스트 리모델링",
+      "url": "https://news.samsungcnt.com/ko/전체기사/건설부문/2026-10-삼성물산-넥스트-리모델링-베일-벗었다-첫-사업지/"
+    },
+    {
+      "label": "서울시 리모델링 추진절차",
+      "url": "https://cleanup.seoul.go.kr/cleanup/view/remodeling.do"
+    }
+  ]
+}

@@ -7,3 +7,4 @@
 *.png binary
 *.jpeg binary
 *.jpg binary
+*.html text eol=lf

@@ -1,0 +1,64 @@
+{
+  "revision": "Rev11",
+  "asOf": "2026-11-03",
+  "format": "A4 landscape HTML only",
+  "pages": 22,
+  "hashes": {
+    "sourceHTML": "b3a283be9eee03a907a238a782c0e8ee23fd564915b2414f393233959ae83b3c",
+    "standaloneHTML": "9ed8cf615f1933d69952941dad607e64adb8c80d1a58bb4ed236f7ab17870c0f",
+    "a4CSS": "5f9b39f15c79e9794bc84846d36485dbbaaf08e455f5c04f2de4464a47194a8f"
+  },
+  "copiesIdentical": [
+    "versioned release",
+    "project output latest HTML",
+    "project output dated HTML"
+  ],
+  "checks": {
+    "screenTextClipping": 0,
+    "printTextClipping": 0,
+    "screenPrintFontAndGeometryDifferences": 0,
+    "mobileViewport": 390,
+    "mobileHorizontalOverflow": 0,
+    "mobileComparisonLabelsVisible": 12,
+    "brokenImages": 0,
+    "browserErrors": 0,
+    "externalResourceRequestsOffline": 0,
+    "nativePrintCheckPages": 22,
+    "nativePrintCheckMediaBoxPt": [
+      [
+        841.92,
+        594.96
+      ]
+    ]
+  },
+  "content": {
+    "rationaleKeywords": 5,
+    "rationaleSourceLinks": 8,
+    "surveyResponses": 246,
+    "surveyContentPreserved": true,
+    "roadmapSteps": 10,
+    "groupVote": "November 2026 planned; not yet formed",
+    "discussionAgendaDate": "2026-10-28",
+    "costEstimateBillionKRW": 30,
+    "canceledCaseExcluded": true
+  },
+  "independentReview": {
+    "fact": {
+      "verdict": "PASS",
+      "average": 9.5,
+      "method": "manual comparison with official sources",
+      "priorAutomatedLawEnginePassed": false
+    },
+    "quality": {
+      "verdict": "PASS",
+      "average": 9.72,
+      "mandatoryDefects": 0
+    }
+  },
+  "limits": [
+    "No physical paper printer test",
+    "Site-specific building records and legal eligibility are not certified",
+    "Deployment bytes are checked separately after push"
+  ],
+  "finalPDFPublished": false
+}

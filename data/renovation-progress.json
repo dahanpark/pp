@@ -1,0 +1,180 @@
+{
+  "title": "리노베이션 제안·추진 진행경과",
+  "subtitle": "필요성 공감에서 검토 체계 마련으로",
+  "asOf": "2026-11-02",
+  "currentStatus": {
+    "label": "현재 단계",
+    "title": "리노베이션 협의체 구성안 11월 표결 예정",
+    "description": "가결 시 입대의와 주민이 참여해 준비위원회 발족을 위한 사전 검토에 착수합니다. 협의체나 준비위원회가 이미 공식 발족한 단계는 아닙니다."
+  },
+  "events": [
+    {
+      "id": "20261028-representatives-discussion",
+      "date": "2026-10-28",
+      "dateLabel": "2026.10.28",
+      "datePrecision": "day",
+      "status": "실시",
+      "title": "입대의에서 리노베이션 추진 제안 토의",
+      "summary": "동대표들과 1시간 넘게 대수선 검토·추진 제안을 논의했습니다.",
+      "points": [
+        "대수선 필요성에 대한 공감이 제시됐습니다.",
+        "구체적인 추진 방식과 주체는 신중히 검토하자는 의견이 나왔습니다."
+      ],
+      "source": {
+        "kind": "userProvided",
+        "reference": "2026-10-28 입대의 논의 결과 공유문"
+      },
+      "nextCheck": "회의에서 제시된 의견과 후속 안건 내용을 누적 기록합니다."
+    },
+    {
+      "id": "20261028-consultative-group-direction",
+      "date": "2026-10-28",
+      "dateLabel": "2026.10.28",
+      "datePrecision": "day",
+      "status": "논의방향",
+      "title": "준비위원회에 앞서 리노베이션 협의체 검토",
+      "summary": "사업의 가능성과 범위를 살필 협의체를 먼저 구성하는 방향으로 논의했습니다.",
+      "points": [
+        "협의체 구성에는 입대의 의결이 필요합니다."
+      ],
+      "source": {
+        "kind": "userProvided",
+        "reference": "2026-10-28 입대의 논의 결과 공유문",
+        "additionalReference": "2026-11-02 사용자 로드맵 보완 지시",
+        "additionalText": "리노베이션 협의체 구성 (입대의 의결, 입대의+주민참여로 착수). 준비위원회 발족을 위한 사전 검토. 협의체 구성은 11월 표결 예정."
+      },
+      "nextCheck": "협의체의 명칭·구성원·역할·운영 기준과 의결 결과를 확인합니다."
+    },
+    {
+      "id": "202611-consultative-group-vote-plan",
+      "date": "2026-11",
+      "dateLabel": "2026.11 예정",
+      "datePrecision": "month",
+      "status": "의결예정",
+      "title": "리노베이션 협의체 구성안 표결 예정",
+      "summary": "협의체 구성안은 11월 입대의 표결 예정입니다.",
+      "points": [
+        "구체적인 회의일과 표결 결과는 확인 후 갱신합니다."
+      ],
+      "source": {
+        "kind": "userProvided",
+        "reference": "2026-10-28 입대의 논의 결과 공유문",
+        "additionalReference": "2026-11-02 사용자 로드맵 보완 지시",
+        "additionalText": "리노베이션 협의체 구성 (입대의 의결, 입대의+주민참여로 착수). 준비위원회 발족을 위한 사전 검토. 협의체 구성은 11월 표결 예정."
+      },
+      "nextCheck": "11월 구성안의 실제 상정 여부와 표결 결과를 확인합니다."
+    },
+    {
+      "id": "after-approval-owner-opinion-gathering",
+      "date": null,
+      "dateLabel": "구성안 가결 시",
+      "datePrecision": "conditional",
+      "status": "가결조건부",
+      "title": "입대의·주민 참여로 사전 검토 착수",
+      "summary": "입대의와 주민이 참여해 준비위원회 발족을 위한 사전 검토를 진행합니다.",
+      "points": [
+        "시공사 제안 설명회·소유주 추가 설문 등을 추진할 수 있습니다.",
+        "협의체 구성원과 운영 방안도 함께 논의합니다."
+      ],
+      "source": {
+        "kind": "userProvided",
+        "reference": "2026-10-28 입대의 논의 결과 공유문",
+        "additionalReference": "2026-11-02 사용자 로드맵 보완 지시",
+        "additionalText": "리노베이션 협의체 구성 (입대의 의결, 입대의+주민참여로 착수). 준비위원회 발족을 위한 사전 검토. 협의체 구성은 11월 표결 예정."
+      },
+      "nextCheck": "구성안 가결 여부를 먼저 확인한 뒤 실제 활동 일정과 실시 결과를 추가합니다."
+    }
+  ],
+  "participation": {
+    "title": "함께 마련할 다음 걸음",
+    "text": "대수선을 우선 검토하는 이유를 이웃과 공유하고, 전문성과 뜻을 보탤 소유주 여러분의 참여를 부탁드립니다."
+  },
+  "footerNote": "협의체 구성은 아직 의결 전입니다. 실제 표결 결과와 활동 경과를 날짜순으로 누적합니다.",
+  "sourceLabel": "자료: 2026.10.28 입대의 논의 결과 공유 내용 · 2026.11.02 정리",
+  "roadmapUpdates": {
+    "title": "대수선 10단계 검토 순서(안)",
+    "currentStep": 3,
+    "stepCount": 10,
+    "currentProgressLabel": "03 / 10",
+    "currentAriaLabel": "현재 위치: 10단계 중 3단계, 리노베이션 협의체 구성안 11월 표결 예정",
+    "currentLabel": "리노베이션 협의체 구성안 11월 표결 예정",
+    "steps": [
+      {
+        "number": 1,
+        "title": "주민 여론 확인 및 공감대 형성",
+        "detail": "설문·토론으로 우선순위와 우려 수렴",
+        "dateBadge": null,
+        "status": "진행"
+      },
+      {
+        "number": 2,
+        "title": "준비위원회 구성 및 추진 제안",
+        "detail": "토론방 1차 목표 · 구성·역할·운영 기준 제안",
+        "dateBadge": "26년 10월 28일 토의안건 상정",
+        "status": "토의실시"
+      },
+      {
+        "number": 3,
+        "title": "리노베이션 협의체 구성 (입대의 의결)",
+        "detail": "입대의+주민참여로 착수 · 준비위원회 발족을 위한 사전 검토",
+        "dateBadge": "11월 표결 예정",
+        "status": "의결예정"
+      },
+      {
+        "number": 4,
+        "title": "준비위원회 의결 및 공식 발족 (주민 투표)",
+        "detail": "투표 대상·방식과 운영 기준 확인",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 5,
+        "title": "리노베이션 범위 및 구체적인 방안 설정",
+        "detail": "현황 진단·공사 범위·재원안 작성",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 6,
+        "title": "시공사 제안 비교 및 입찰 여부 검토",
+        "detail": "비용·기간·브랜드 조건 비교",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 7,
+        "title": "추진위원회로 확대 (주민 투표)",
+        "detail": "구성·권한과 대표성 검토",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 8,
+        "title": "시공사 제안·대수선 범위 확정 및 입찰 (주민 투표)",
+        "detail": "비교안 공개 후 공식 절차 검토",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 9,
+        "title": "대수선 인허가 및 시공성 검토",
+        "detail": "설계·행정 협의·시공 가능성 확인",
+        "dateBadge": null,
+        "status": "후속제안"
+      },
+      {
+        "number": 10,
+        "title": "대수선 착공",
+        "detail": "승인·계약·안전계획 확인 후 시작",
+        "dateBadge": null,
+        "status": "후속제안"
+      }
+    ],
+    "qualification": "검토 순서는 제안이며, 협의체 구성은 11월 표결 예정입니다. 준비위원회·추진위원회 등 후속 단계와 주민 투표의 실제 의결·동의 요건은 검토 결과 및 법령·관리규약 확인에 따라 정합니다.",
+    "administrativeAgenda3": {
+      "title": "3. 리노베이션 협의체 구성 및 후속 추진 주체 검토",
+      "text": "협의체 구성안은 11월 표결 예정입니다. 가결 시 입대의와 주민이 참여해 준비위원회 발족을 위한 사전 검토에 착수합니다."
+    }
+  },
+  "visibleCopyCharacterCount": 747
+}
