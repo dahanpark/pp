@@ -6,7 +6,7 @@ const project=path.resolve(repo,'../..');
 const workspace=path.join(project,'_workspace/20261102_01');
 const approved=process.argv.includes('--approved')||process.argv.includes('--publish');
 const omitRationale=process.argv.includes('--omit-rationale');
-const revision=process.env.REPORT_REVISION||'Rev11';
+const revision=process.env.REPORT_REVISION||'Rev12';
 const issueDate=process.env.REPORT_DATE||'2026-11-03';
 const displayDate=issueDate.replaceAll('-','.');
 const dateStamp=issueDate.replaceAll('-','').slice(2);
@@ -65,7 +65,8 @@ function standalone(html){
   const keywordRows=(law.cards||[]).length===5;
   const lawCards=(law.cards||law.sections||[]).map((c,i)=>keywordRows?`<section class="rationale-card"><div class="keyword-heading"><span>${String(i+1).padStart(2,'0')}</span><h4>${esc(c.title.replace(/^\d+\.\s*/,''))}</h4></div><div class="keyword-copy"><p>${esc(c.body||c.text)}</p>${c.note?`<small>${esc(c.note)}</small>`:''}</div></section>`:`<section class="rationale-card"><h4>${esc(c.title)}</h4><p>${esc(c.body||c.text)}</p>${c.note?`<small>${esc(c.note)}</small>`:''}</section>`).join('');
   const sources=(law.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label||s.title)}</a>`).join(' · ');
-  const lawSlide=make('slide-rationale'+(keywordRows?' keyword-rationale':''),head('검토 방향 · 제도와 단지 여건',law.title)+`<p class="rationale-lead">${esc(law.lead)}</p><div class="rationale-grid">${lawCards}</div><p class="rationale-conclusion">${esc(law.conclusion)}</p><p class="rationale-sources">${sources}${sources?' · ':''}법령·상품 확인: ${displayDate}${!approved?' · 문구 협의용':''}</p>`+foot());
+  const lawLead=law.lead?`<p class="rationale-lead">${esc(law.lead)}</p>`:'';
+  const lawSlide=make('slide-rationale'+(keywordRows?' keyword-rationale':''),head('검토 방향 · 제도와 단지 여건',law.title)+lawLead+`<div class="rationale-grid">${lawCards}</div><p class="rationale-conclusion">${esc(law.conclusion)}</p><p class="rationale-sources">${sources}${sources?' · ':''}법령·상품 확인: ${displayDate}${!approved?' · 문구 협의용':''}</p>`+foot());
   if(!omitRationale)document.querySelector('[data-original-page="3"]').after(lawSlide);
   const events=timeline.events.filter(e=>e.status!=='가결조건부');
   const conditional=timeline.events.find(e=>e.status==='가결조건부');
@@ -90,7 +91,16 @@ function standalone(html){
    for(const [index,data] of [[1,updates.step2],[2,updates.step3]]){const copy=roadmap.querySelectorAll('.roadmap-step-copy')[index];copy.querySelector('b').innerHTML=esc(data.title)+(index===1?' <em>현재</em>':'');copy.querySelector('small').textContent=data.detail;}
   }
   roadmap.querySelector('.roadmap-qualification').textContent=updates.qualification;
-  const agenda=roadmap.querySelector('.space-y-4').children[2];agenda.querySelector('strong').textContent=updates.administrativeAgenda3.title;agenda.querySelector('p').textContent=updates.administrativeAgenda3.text;
+  const agendaList=roadmap.querySelector('.space-y-4');
+  const thirdAgenda=agendaList.children[2];
+  thirdAgenda.querySelector('strong').textContent=updates.administrativeAgenda3.title;
+  thirdAgenda.querySelector('p').textContent=updates.administrativeAgenda3.text;
+  if(updates.administrativeAgenda4){
+   const fourthAgenda=agendaList.children[3]||thirdAgenda.cloneNode(true);
+   fourthAgenda.querySelector('strong').textContent=updates.administrativeAgenda4.title;
+   fourthAgenda.querySelector('p').textContent=updates.administrativeAgenda4.text;
+   agendaList.append(fourthAgenda);
+  }
   const reportSlides=[...document.querySelectorAll('.ppt-slide')];
   reportSlides.forEach((slide,i)=>{
    slide.id=`report-page-${i+1}`;

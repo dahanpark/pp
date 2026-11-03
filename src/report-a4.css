@@ -173,7 +173,9 @@
 .roadmap-step-heading { display:flex; align-items:flex-start; gap:8px; }
 .roadmap-step-heading > b { flex:1; }
 .roadmap-date-badge { flex:none; margin-left:auto; padding:2px 5px; color:#1e40af; background:#dbeafe; border-radius:4px; font-size:9.5px; font-weight:800; line-height:1.3; white-space:nowrap; }
-.roadmap-step.is-done { background:#f8fafc; border-color:#cbd5e1; }
+.roadmap-step.is-done { background:#ecfccb; border-color:#bef264; }
+.roadmap-step.is-done .roadmap-number,
+.roadmap-step.is-done .roadmap-date-badge { color:#365314; background:#d9f99d; }
 .roadmap-step.is-current .roadmap-date-badge { color:#065f46; background:#d1fae5; }
 @media screen and (max-width:767px) {
   .slide-rationale,.slide-timeline { min-height:0; height:auto; }
